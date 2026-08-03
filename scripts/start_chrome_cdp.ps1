@@ -17,7 +17,7 @@ if (-not $ChromePath) {
 }
 
 if (-not $ChromePath -or -not (Test-Path $ChromePath)) {
-    throw "Chrome executable not found. Pass -ChromePath 'C:\\Path\\to\\chrome.exe'."
+    throw "Chrome executable not found. Pass -ChromePath 'C:\Path\to\chrome.exe'."
 }
 
 if ($Port -lt 1 -or $Port -gt 65535) {
