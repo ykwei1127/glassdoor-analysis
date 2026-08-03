@@ -57,33 +57,21 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 接著在新開的 Chrome 視窗登入 Glassdoor，並保持這個視窗開啟。
 
-### 2. 執行一輪資料更新
+### 2. 優先推薦：只更新既有公司／地區評分
 
-確認已登入後，在 `handoff` 根目錄貼上：
-
-```powershell
-.\scripts\update_data.ps1 -RefreshExisting
-```
-
-這個腳本會自動：
-
-1. 備份目前的 `artifacts`
-2. 更新公司的辦公室地點與區域 pool
-3. 找出新的公司／地區 review URL
-4. 抓取尚未完成的新資料
-5. 重新更新既有公司／地區的最新評分
-
-更新可能需要一段時間，請不要關閉 PowerShell 或 Chrome，也不要同時開另一個更新程序。
-
-如果這次只想補抓新地區，不想重新抓既有評分，可以使用：
+如果只是想把目前已有的評分更新成 Glassdoor 最新數字，請使用：
 
 ```powershell
-.\scripts\update_data.ps1
+.\scripts\refresh_existing_metrics.ps1 -MaxExtractions 10
 ```
 
-## 只更新既有公司／地區的評分
+這會先測試 10 筆，並且每完成 1 筆就顯示一次進度，例如：
 
-如果你只想把目前已經有的公司／地區評分更新成 Glassdoor 最新數字，**不要使用上面的 `update_data.ps1`**，請使用另一支專用腳本：
+```text
+Extraction progress: 3/639
+```
+
+確認結果正常後，再執行完整更新：
 
 ```powershell
 .\scripts\refresh_existing_metrics.ps1
@@ -96,15 +84,31 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 - 公司／地區 review URL
 - 新增公司或新地區
 
-第一次建議先只測試 10 筆：
+每次執行前會自動備份 `artifacts`。每筆請求之間會依照安全設定等待數秒，看到進度慢慢增加是正常的。
+
+### 3. 需要新增地區或更新公司地點時
+
+只有在需要找新公司／地區，或要更新 Office Locations 時，才使用完整更新：
 
 ```powershell
-.\scripts\refresh_existing_metrics.ps1 -MaxExtractions 10
+.\scripts\update_data.ps1 -RefreshExisting
 ```
 
-腳本預設每完成 1 筆就會顯示一次進度，例如 `Extraction progress: 3/639`，所以不需要等到全部完成才知道目前跑到哪裡。每筆請求之間仍會依照安全設定等待數秒，看到進度慢慢增加是正常的。
+這個腳本會依序：
 
-確認結果正常後，再執行不帶 `-MaxExtractions` 的完整更新。這兩支腳本都會先自動備份 `artifacts`。
+1. 備份目前的 `artifacts`
+2. 更新公司的辦公室地點與區域 pool
+3. 找出新的公司／地區 review URL
+4. 抓取尚未完成的新資料
+5. 重新更新既有公司／地區的最新評分
+
+如果只想補抓新地區、不重新抓既有評分，可以使用：
+
+```powershell
+.\scripts\update_data.ps1
+```
+
+完整更新可能需要一段時間，請不要關閉 PowerShell 或 Chrome，也不要同時開另一個更新程序。
 
 ## 更新完成後看哪裡？
 
