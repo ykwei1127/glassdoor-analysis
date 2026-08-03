@@ -79,10 +79,10 @@ Invoke-WebRequest http://127.0.0.1:9223/json/version
 .venv\Scripts\python.exe -m glassdoor_analysis --stage probe-review-url-gaps --max-gap-probes 100 --browser-cdp-url http://127.0.0.1:9223 --output-dir .\artifacts
 .venv\Scripts\python.exe -m glassdoor_analysis `
   --stage extract-metrics `
-  --request-delay-seconds 8 `
-  --request-jitter-seconds 4 `
+  --request-delay-seconds 4 `
+  --request-jitter-seconds 2 `
   --cooldown-every 25 `
-  --cooldown-seconds 120 `
+  --cooldown-seconds 8 `
   --progress-every 10 `
   --browser-cdp-url http://127.0.0.1:9223 `
   --output-dir .\artifacts
@@ -126,7 +126,7 @@ Country mapping 以 normalized region 為 key，由程式內的明確對應表�
 
 地區 review URL 優先透過 Office Locations 的頁面連結解析。Gap probe 只重用已驗證 office URL 中的 Glassdoor location ID 來建立候選，不使用 Glassdoor keyword search 或搜尋 fallback；候選頁仍必須通過公司、地區與聚合欄位驗證。
 
-Gap probe 與 metrics extraction 預設都會在每次網路請求間等待 8–12 秒，並在每 25 個網路請求後冷卻 120 秒。若偵測到 Glassdoor rate limit、CAPTCHA 或登入限制，該批次會立即停止，當前紀錄仍保留為可重試狀態。不要以 `0` 關閉延遲後執行大型批次。
+Gap probe 與 metrics extraction 預設都會在每次網路請求間等待 4–6 秒（4 秒基本等待加上 0–2 秒隨機等待），並在每 25 個網路請求後冷卻 8 秒。若偵測到 Glassdoor rate limit、CAPTCHA 或登入限制，該批次會立即停止，當前紀錄仍保留為可重試狀態。不要以 `0` 關閉延遲後執行大型批次。
 
 `extract-metrics` 每完成一筆便增量更新 `reviews_aggregate.json/csv` 與 `metrics_attempt_log.json/csv`，預設每 10 筆印出一次進度。中斷後重跑相同指令會跳過已成功資料；如要重試先前的頁面驗證失敗，可加上 `--retry-extraction-failures`。
 

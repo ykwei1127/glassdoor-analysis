@@ -97,14 +97,14 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--request-delay-seconds",
         type=float,
-        default=8.0,
-        help="Base delay between probe or extraction requests. Defaults to 8 seconds.",
+        default=4.0,
+        help="Base delay between probe or extraction requests. Defaults to 4 seconds.",
     )
     parser.add_argument(
         "--request-jitter-seconds",
         type=float,
-        default=4.0,
-        help="Random additional delay between requests. Defaults to 0-4 seconds.",
+        default=2.0,
+        help="Random additional delay between requests. Defaults to 0-2 seconds.",
     )
     parser.add_argument(
         "--cooldown-every",
@@ -115,8 +115,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--cooldown-seconds",
         type=float,
-        default=120.0,
-        help="Periodic cooldown duration. Defaults to 120 seconds.",
+        default=8.0,
+        help="Periodic cooldown duration. Defaults to 8 seconds.",
     )
     parser.add_argument(
         "--progress-every",

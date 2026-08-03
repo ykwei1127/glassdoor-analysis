@@ -178,6 +178,29 @@ Copy-Item artifacts artifacts_backup_2026-08-03 -Recurse
 
 這兩個選項的用途不同，請不要為了「保險」而每次都加上。
 
+## 參數與安全預設值
+
+一般使用不需要修改以下設定：
+
+| 設定 | 預設值 | 說明 |
+|---|---:|---|
+| Chrome Debug Port | `9223` | Chrome 連線埠 |
+| 基本 request delay | `4` 秒 | 每次 request 前的基本等待 |
+| 隨機額外等待 | `0–2` 秒 | 實際每次約等待 `4–6` 秒 |
+| Cooldown | 每 `25` 筆後 `8` 秒 | 降低 CAPTCHA 或 rate limit 風險 |
+| refresh 進度顯示 | 每 `1` 筆 | `refresh_existing_metrics.ps1` 的預設值 |
+
+CLI 也可以用以下參數調整：
+
+```powershell
+--request-delay-seconds 4
+--request-jitter-seconds 2
+--cooldown-every 25
+--cooldown-seconds 8
+```
+
+除非熟悉 Glassdoor 抓取限制，否則不建議把 delay 或 cooldown 降低；若遇到 CAPTCHA、登入失效或 rate limit，應先停止抓取。
+
 ## 輸出檔案在哪裡？
 
 所有預設輸出都在 `artifacts` 資料夾。重要檔案包括：
@@ -194,7 +217,7 @@ Copy-Item artifacts artifacts_backup_2026-08-03 -Recurse
 - 每次更新前**先備份整個 `artifacts` 資料夾**；更新後也再備份一次，並清楚標記日期。
 - 不要把 session、cookies、token、password 或 secret 檔案提交、複製到共享位置或上傳 Git。
 - 不要平行大量抓取；先用單一公司／地區小批量確認，再逐步增加範圍。
-- 遵守每次 request 間 **8–12 秒 delay**。預設程式設定就是 8 秒基礎延遲加上最多 4 秒隨機延遲，請不要任意調低。
+- 遵守每次 request 間 **4–6 秒 delay**。預設程式設定就是 4 秒基礎延遲加上最多 2 秒隨機延遲，並在每 25 次 request 後冷卻 8 秒，請不要任意調低。
 - 遇到 CAPTCHA、登入失效或 rate limit 時，先停止抓取，不要用更密集的請求硬試。
 
 ## 出問題時
@@ -215,7 +238,7 @@ Invoke-WebRequest http://127.0.0.1:9223/json/version
 
 ### 登入、CAPTCHA 或 rate limit
 
-確認是在 CDP 新 Chrome 中登入 Glassdoor，且該視窗仍保持開啟。若出現 CAPTCHA、被要求重新登入、429 或其他 rate limit，請暫停，等待後以較小批量重試；不要平行執行多個抓取程序，也不要降低 8–12 秒 request delay。
+確認是在 CDP 新 Chrome 中登入 Glassdoor，且該視窗仍保持開啟。若出現 CAPTCHA、被要求重新登入、429 或其他 rate limit，請暫停，等待後以較小批量重試；不要平行執行多個抓取程序，也不要降低 4–6 秒 request delay。
 
 ### Python 或 pip 問題
 
