@@ -1,0 +1,682 @@
+[
+  {
+    "raw_label": "Ciudad de Mexico, MEX",
+    "normalized_label": "ciudad de mexico mex",
+    "country": "Mexico"
+  },
+  {
+    "raw_label": "Fremont, CA",
+    "normalized_label": "fremont ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Markham, ON",
+    "normalized_label": "markham on",
+    "country": "Canada"
+  },
+  {
+    "raw_label": "Barcelona, CT",
+    "normalized_label": "barcelona ct",
+    "country": "Spain"
+  },
+  {
+    "raw_label": "Budapest, BU",
+    "normalized_label": "budapest bu",
+    "country": "Hungary"
+  },
+  {
+    "raw_label": "Emmen, DR",
+    "normalized_label": "emmen dr",
+    "country": "Netherlands"
+  },
+  {
+    "raw_label": "Hemel Hempstead, ENG",
+    "normalized_label": "hemel hempstead eng",
+    "country": "United Kingdom"
+  },
+  {
+    "raw_label": "Milan, LOM",
+    "normalized_label": "milan lom",
+    "country": "Italy"
+  },
+  {
+    "raw_label": "Moravská Ostrava, MO",
+    "normalized_label": "moravsk ostrava mo",
+    "country": "Czechia"
+  },
+  {
+    "raw_label": "Noisy-le-Grand, A8",
+    "normalized_label": "noisy le grand a8",
+    "country": "France"
+  },
+  {
+    "raw_label": "Ratingen, NW",
+    "normalized_label": "ratingen nw",
+    "country": "Germany"
+  },
+  {
+    "raw_label": "Üsküdar, T34",
+    "normalized_label": "sk dar t34",
+    "country": "Turkey"
+  },
+  {
+    "raw_label": "Warsaw, MZ",
+    "normalized_label": "warsaw mz",
+    "country": "Poland"
+  },
+  {
+    "raw_label": "Bangkok, 10",
+    "normalized_label": "bangkok 10",
+    "country": "Thailand"
+  },
+  {
+    "raw_label": "Dubai, DU",
+    "normalized_label": "dubai du",
+    "country": "United Arab Emirates"
+  },
+  {
+    "raw_label": "Jakarta, JK",
+    "normalized_label": "jakarta jk",
+    "country": "Indonesia"
+  },
+  {
+    "raw_label": "Kuala Lumpur, 14",
+    "normalized_label": "kuala lumpur 14",
+    "country": "Malaysia"
+  },
+  {
+    "raw_label": "Manila, D9",
+    "normalized_label": "manila d9",
+    "country": "Philippines"
+  },
+  {
+    "raw_label": "Mumbai, MH",
+    "normalized_label": "mumbai mh",
+    "country": "India"
+  },
+  {
+    "raw_label": "Seoul, 11",
+    "normalized_label": "seoul 11",
+    "country": "South Korea"
+  },
+  {
+    "raw_label": "Singapore",
+    "normalized_label": "singapore",
+    "country": "Singapore"
+  },
+  {
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "country": "Taiwan"
+  },
+  {
+    "raw_label": "Tokyo, 40",
+    "normalized_label": "tokyo 40",
+    "country": "Japan"
+  },
+  {
+    "raw_label": "San Isidro, HUC",
+    "normalized_label": "san isidro huc",
+    "country": "Peru"
+  },
+  {
+    "raw_label": "Santiago, RM",
+    "normalized_label": "santiago rm",
+    "country": "Chile"
+  },
+  {
+    "raw_label": "São Paulo, SP",
+    "normalized_label": "s o paulo sp",
+    "country": "Brazil"
+  },
+  {
+    "raw_label": "Sydney, NSW",
+    "normalized_label": "sydney nsw",
+    "country": "Australia"
+  },
+  {
+    "raw_label": "Austin, TX",
+    "normalized_label": "austin tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Beaverton, OR",
+    "normalized_label": "beaverton or",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Bellevue, WA",
+    "normalized_label": "bellevue wa",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Durham, NC",
+    "normalized_label": "durham nc",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Hillsboro, OR",
+    "normalized_label": "hillsboro or",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Redmond, WA",
+    "normalized_label": "redmond wa",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Saint Louis, MO",
+    "normalized_label": "saint louis mo",
+    "country": "United States"
+  },
+  {
+    "raw_label": "San Francisco, CA",
+    "normalized_label": "san francisco ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "San Jose, CA",
+    "normalized_label": "san jose",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Santa Clara, CA",
+    "normalized_label": "santa clara ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Toronto, ON",
+    "normalized_label": "toronto on",
+    "country": "Canada"
+  },
+  {
+    "raw_label": "Westford, MA",
+    "normalized_label": "westford ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Moscow, 48",
+    "normalized_label": "moscow 48",
+    "country": "Russia"
+  },
+  {
+    "raw_label": "Munich, BY",
+    "normalized_label": "munich by",
+    "country": "Germany"
+  },
+  {
+    "raw_label": "Reading, ENG",
+    "normalized_label": "reading eng",
+    "country": "United Kingdom"
+  },
+  {
+    "raw_label": "Zürich, ZH",
+    "normalized_label": "z rich zh",
+    "country": "Switzerland"
+  },
+  {
+    "raw_label": "Bengaluru, KA",
+    "normalized_label": "bengaluru ka",
+    "country": "India"
+  },
+  {
+    "raw_label": "Hsinchu, TXG",
+    "normalized_label": "hsinchu txg",
+    "country": "Taiwan"
+  },
+  {
+    "raw_label": "Pudong, 23",
+    "normalized_label": "pudong 23",
+    "country": "China"
+  },
+  {
+    "raw_label": "Pune, MH",
+    "normalized_label": "pune mh",
+    "country": "India"
+  },
+  {
+    "raw_label": "Shanghai, 23",
+    "normalized_label": "shanghai 23",
+    "country": "China"
+  },
+  {
+    "raw_label": "San Jose, MP",
+    "normalized_label": "san jose mp",
+    "country": "Costa Rica"
+  },
+  {
+    "raw_label": "Frankfurt am Main, HE",
+    "normalized_label": "frankfurt am main he",
+    "country": "Germany"
+  },
+  {
+    "raw_label": "Boise, ID",
+    "normalized_label": "boise id",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Corvallis, OR",
+    "normalized_label": "corvallis or",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Fort Collins, CO",
+    "normalized_label": "fort collins co",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Guadalajara, JAL",
+    "normalized_label": "guadalajara jal",
+    "country": "Mexico"
+  },
+  {
+    "raw_label": "Houston, TX",
+    "normalized_label": "houston tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Palo Alto, CA",
+    "normalized_label": "palo alto ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Portland, OR",
+    "normalized_label": "portland or",
+    "country": "United States"
+  },
+  {
+    "raw_label": "San Diego, CA",
+    "normalized_label": "san diego ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Spring, TX",
+    "normalized_label": "spring tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Sunnyvale, CA",
+    "normalized_label": "sunnyvale ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Tlaquepaque, JAL",
+    "normalized_label": "tlaquepaque jal",
+    "country": "Mexico"
+  },
+  {
+    "raw_label": "Vancouver, WA",
+    "normalized_label": "vancouver wa",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Zapopan, JAL",
+    "normalized_label": "zapopan jal",
+    "country": "Mexico"
+  },
+  {
+    "raw_label": "Boulogne-Billancourt, A8",
+    "normalized_label": "boulogne billancourt a8",
+    "country": "France"
+  },
+  {
+    "raw_label": "Bucharest, B",
+    "normalized_label": "bucharest b",
+    "country": "Romania"
+  },
+  {
+    "raw_label": "Cambridge, ENG",
+    "normalized_label": "cambridge eng",
+    "country": "United Kingdom"
+  },
+  {
+    "raw_label": "Meudon, A8",
+    "normalized_label": "meudon a8",
+    "country": "France"
+  },
+  {
+    "raw_label": "Paris, A8",
+    "normalized_label": "paris a8",
+    "country": "France"
+  },
+  {
+    "raw_label": "Sant Cugat del Vallès, CT",
+    "normalized_label": "sant cugat del vall s ct",
+    "country": "Spain"
+  },
+  {
+    "raw_label": "Tuas, W",
+    "normalized_label": "tuas w",
+    "country": "Singapore"
+  },
+  {
+    "raw_label": "Whitefield, KA",
+    "normalized_label": "whitefield ka",
+    "country": "India"
+  },
+  {
+    "raw_label": "Lake Forest, CA",
+    "normalized_label": "lake forest ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Rolling Meadows, IL",
+    "normalized_label": "rolling meadows il",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Wuhan, 12",
+    "normalized_label": "wuhan 12",
+    "country": "China"
+  },
+  {
+    "raw_label": "Hoofddorp, NH",
+    "normalized_label": "hoofddorp nh",
+    "country": "Netherlands"
+  },
+  {
+    "raw_label": "Notting Hill, VIC",
+    "normalized_label": "notting hill vic",
+    "country": "Australia"
+  },
+  {
+    "raw_label": "Jeffersonville, IN",
+    "normalized_label": "jeffersonville in",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Irving, TX",
+    "normalized_label": "irving tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Jersey City, NJ",
+    "normalized_label": "jersey city nj",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Kanata, ON",
+    "normalized_label": "kanata on",
+    "country": "Canada"
+  },
+  {
+    "raw_label": "Cork, M",
+    "normalized_label": "cork m",
+    "country": "Ireland"
+  },
+  {
+    "raw_label": "London, ENG",
+    "normalized_label": "london eng",
+    "country": "United Kingdom"
+  },
+  {
+    "raw_label": "Paddington, ENG",
+    "normalized_label": "paddington eng",
+    "country": "United Kingdom"
+  },
+  {
+    "raw_label": "Aliso, CA",
+    "normalized_label": "aliso ca",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Bedford, MA",
+    "normalized_label": "bedford ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Boston, MA",
+    "normalized_label": "boston ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Boydton, VA",
+    "normalized_label": "boydton va",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Cambridge, MA",
+    "normalized_label": "cambridge ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Canada, KY",
+    "normalized_label": "canada ky",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Canton, MA",
+    "normalized_label": "canton ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Cedar Park, TX",
+    "normalized_label": "cedar park tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Framingham, MA",
+    "normalized_label": "framingham ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Franklin, MA",
+    "normalized_label": "franklin ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Fuquay-Varina, NC",
+    "normalized_label": "fuquay varina nc",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Georgetown, TX",
+    "normalized_label": "georgetown tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Hopkinton, MA",
+    "normalized_label": "hopkinton ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "India, TX",
+    "normalized_label": "india tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Land O' Lakes, FL",
+    "normalized_label": "land o lakes fl",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Leander, TX",
+    "normalized_label": "leander tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Pflugerville, TX",
+    "normalized_label": "pflugerville tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Quincy, MA",
+    "normalized_label": "quincy ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Round Rock, TX",
+    "normalized_label": "round rock tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "San Marcos, TX",
+    "normalized_label": "san marcos tx",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Satellite Beach, FL",
+    "normalized_label": "satellite beach fl",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Wellesley, MA",
+    "normalized_label": "wellesley ma",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Domlur, KA",
+    "normalized_label": "domlur ka",
+    "country": "India"
+  },
+  {
+    "raw_label": "Chicago, IL",
+    "normalized_label": "chicago il",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Morrisville, NC",
+    "normalized_label": "morrisville nc",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Bratislava, 02",
+    "normalized_label": "bratislava 02",
+    "country": "Slovakia"
+  },
+  {
+    "raw_label": "Stuttgart, BW",
+    "normalized_label": "stuttgart bw",
+    "country": "Germany"
+  },
+  {
+    "raw_label": "Beijing, 22",
+    "normalized_label": "beijing 22",
+    "country": "China"
+  },
+  {
+    "raw_label": "Changping, 22",
+    "normalized_label": "changping 22",
+    "country": "China"
+  },
+  {
+    "raw_label": "Haidian, 22",
+    "normalized_label": "haidian 22",
+    "country": "China"
+  },
+  {
+    "raw_label": "Hong Kong",
+    "normalized_label": "hong kong",
+    "country": "Hong Kong"
+  },
+  {
+    "raw_label": "Shenzhenzhen, 02",
+    "normalized_label": "shenzhenzhen 02",
+    "country": "China"
+  },
+  {
+    "raw_label": "Xiamen, 07",
+    "normalized_label": "xiamen 07",
+    "country": "China"
+  },
+  {
+    "raw_label": "Buenos Aires, C",
+    "normalized_label": "buenos aires c",
+    "country": "Argentina"
+  },
+  {
+    "raw_label": "Campinas, SP",
+    "normalized_label": "campinas sp",
+    "country": "Brazil"
+  },
+  {
+    "raw_label": "Indaiatuba, SP",
+    "normalized_label": "indaiatuba sp",
+    "country": "Brazil"
+  },
+  {
+    "raw_label": "Itu, SP",
+    "normalized_label": "itu sp",
+    "country": "Brazil"
+  },
+  {
+    "raw_label": "Martínez, B",
+    "normalized_label": "mart nez b",
+    "country": "Argentina"
+  },
+  {
+    "raw_label": "Sorocaba, SP",
+    "normalized_label": "sorocaba sp",
+    "country": "Brazil"
+  },
+  {
+    "raw_label": "Vicente López, B",
+    "normalized_label": "vicente l pez b",
+    "country": "Argentina"
+  },
+  {
+    "raw_label": "Global",
+    "normalized_label": "global",
+    "country": "Global"
+  },
+  {
+    "raw_label": "Taipei",
+    "normalized_label": "taipei",
+    "country": "Taiwan"
+  },
+  {
+    "raw_label": "Hsinchu",
+    "normalized_label": "hsinchu",
+    "country": "Taiwan"
+  },
+  {
+    "raw_label": "Taoyuan",
+    "normalized_label": "taoyuan",
+    "country": "Taiwan"
+  },
+  {
+    "raw_label": "Shanghai",
+    "normalized_label": "shanghai",
+    "country": "China"
+  },
+  {
+    "raw_label": "Shenzhen",
+    "normalized_label": "shenzhen",
+    "country": "China"
+  },
+  {
+    "raw_label": "Tokyo",
+    "normalized_label": "tokyo",
+    "country": "Japan"
+  },
+  {
+    "raw_label": "Seoul",
+    "normalized_label": "seoul",
+    "country": "South Korea"
+  },
+  {
+    "raw_label": "Austin",
+    "normalized_label": "austin",
+    "country": "United States"
+  },
+  {
+    "raw_label": "Seattle",
+    "normalized_label": "seattle",
+    "country": "United States"
+  },
+  {
+    "raw_label": "London",
+    "normalized_label": "london",
+    "country": "United Kingdom"
+  },
+  {
+    "raw_label": "Dublin",
+    "normalized_label": "dublin",
+    "country": "Ireland"
+  },
+  {
+    "raw_label": "Munich",
+    "normalized_label": "munich",
+    "country": "Germany"
+  }
+]

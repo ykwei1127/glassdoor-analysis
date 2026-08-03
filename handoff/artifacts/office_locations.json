@@ -1,0 +1,1202 @@
+[
+  {
+    "company": "ASUS",
+    "raw_label": "Ciudad de Mexico, MEX",
+    "normalized_label": "ciudad de mexico mex",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Ciudad-de-Mexico-Office-Locations-EI_IE40093.4,8_IL.9,25_IC5017436.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Fremont, CA",
+    "normalized_label": "fremont ca",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Fremont-Office-Locations-EI_IE40093.4,8_IL.9,16_IC1147355.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Markham, ON",
+    "normalized_label": "markham on",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Markham-Office-Locations-EI_IE40093.4,8_IL.9,16_IC2280736.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Barcelona, CT",
+    "normalized_label": "barcelona ct",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Barcelona-Office-Locations-EI_IE40093.4,8_IL.9,18_IC2547194.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Budapest, BU",
+    "normalized_label": "budapest bu",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Budapest-Office-Locations-EI_IE40093.4,8_IL.9,17_IC3125126.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Emmen, DR",
+    "normalized_label": "emmen dr",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Emmen-Office-Locations-EI_IE40093.4,8_IL.9,14_IC3060162.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Hemel Hempstead, ENG",
+    "normalized_label": "hemel hempstead eng",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Hemel-Hempstead-Office-Locations-EI_IE40093.4,8_IL.9,24_IC2669775.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Milan, LOM",
+    "normalized_label": "milan lom",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Milan-Office-Locations-EI_IE40093.4,8_IL.9,14_IC2802090.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Moravská Ostrava, MO",
+    "normalized_label": "moravsk ostrava mo",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Moravská-Ostrava-Office-Locations-EI_IE40093.4,8_IL.9,25_IC2288209.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Noisy-le-Grand, A8",
+    "normalized_label": "noisy le grand a8",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Noisy-le-Grand-Office-Locations-EI_IE40093.4,8_IL.9,23_IC3100822.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Ratingen, NW",
+    "normalized_label": "ratingen nw",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Ratingen-Office-Locations-EI_IE40093.4,8_IL.9,17_IC2584004.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792058+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Üsküdar, T34",
+    "normalized_label": "sk dar t34",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Üsküdar-Office-Locations-EI_IE40093.4,8_IL.9,16_IC3361446.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Warsaw, MZ",
+    "normalized_label": "warsaw mz",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Warsaw-Office-Locations-EI_IE40093.4,8_IL.9,15_IC3094484.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Bangkok, 10",
+    "normalized_label": "bangkok 10",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Bangkok-Office-Locations-EI_IE40093.4,8_IL.9,16_IC3179725.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Dubai, DU",
+    "normalized_label": "dubai du",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Dubai-Office-Locations-EI_IE40093.4,8_IL.9,14_IC2204498.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Jakarta, JK",
+    "normalized_label": "jakarta jk",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Jakarta-Office-Locations-EI_IE40093.4,8_IL.9,16_IC2709872.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Kuala Lumpur, 14",
+    "normalized_label": "kuala lumpur 14",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Kuala-Lumpur-Office-Locations-EI_IE40093.4,8_IL.9,21_IC2986682.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Manila, D9",
+    "normalized_label": "manila d9",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Manila-Office-Locations-EI_IE40093.4,8_IL.9,15_IC2363570.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Mumbai, MH",
+    "normalized_label": "mumbai mh",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Mumbai-Office-Locations-EI_IE40093.4,8_IL.9,15_IC2851180.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Seoul, 11",
+    "normalized_label": "seoul 11",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Seoul-Office-Locations-EI_IE40093.4,8_IL.9,14_IC3021489.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Singapore",
+    "normalized_label": "singapore",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Singapore-Office-Locations-EI_IE40093.4,8_IL.9,18_IC3235921.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Taipei-Office-Locations-EI_IE40093.4,8_IL.9,15_IC3271041.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Tokyo, 40",
+    "normalized_label": "tokyo 40",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Tokyo-Office-Locations-EI_IE40093.4,8_IL.9,14_IC2851580.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "San Isidro, HUC",
+    "normalized_label": "san isidro huc",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-San-Isidro-Office-Locations-EI_IE40093.4,8_IL.9,19_IC4694011.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Santiago, RM",
+    "normalized_label": "santiago rm",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Santiago-Office-Locations-EI_IE40093.4,8_IL.9,17_IC2434030.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "São Paulo, SP",
+    "normalized_label": "s o paulo sp",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-São-Paulo-Office-Locations-EI_IE40093.4,8_IL.9,18_IC2479061.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "ASUS",
+    "raw_label": "Sydney, NSW",
+    "normalized_label": "sydney nsw",
+    "office_url": "https://www.glassdoor.com/Location/All-ASUS-Sydney-Office-Locations-EI_IE40093.4,8_IL.9,15_IC2235932.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:37.792394+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Austin, TX",
+    "normalized_label": "austin tx",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Austin-Office-Locations-EI_IE7633.4,10_IL.11,17_IC1139761.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Beaverton, OR",
+    "normalized_label": "beaverton or",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Beaverton-Office-Locations-EI_IE7633.4,10_IL.11,20_IC1151576.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Bellevue, WA",
+    "normalized_label": "bellevue wa",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Bellevue-Office-Locations-EI_IE7633.4,10_IL.11,19_IC1150442.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Durham, NC",
+    "normalized_label": "durham nc",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Durham-Office-Locations-EI_IE7633.4,10_IL.11,17_IC1138697.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Hillsboro, OR",
+    "normalized_label": "hillsboro or",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Hillsboro-Office-Locations-EI_IE7633.4,10_IL.11,20_IC1151603.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Redmond, WA",
+    "normalized_label": "redmond wa",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Redmond-Office-Locations-EI_IE7633.4,10_IL.11,18_IC1150499.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Saint Louis, MO",
+    "normalized_label": "saint louis mo",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Saint-Louis-Office-Locations-EI_IE7633.4,10_IL.11,22_IC1131270.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "San Francisco, CA",
+    "normalized_label": "san francisco ca",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-San-Francisco-Office-Locations-EI_IE7633.4,10_IL.11,24_IC1147401.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "San Jose, CA",
+    "normalized_label": "san jose",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-San-Jose-Office-Locations-EI_IE7633.4,10_IL.11,19_IC1147436.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Santa Clara, CA",
+    "normalized_label": "santa clara ca",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Santa-Clara-Office-Locations-EI_IE7633.4,10_IL.11,22_IC1147439.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Toronto, ON",
+    "normalized_label": "toronto on",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Toronto-Office-Locations-EI_IE7633.4,10_IL.11,18_IC2281069.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Westford, MA",
+    "normalized_label": "westford ma",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Westford-Office-Locations-EI_IE7633.4,10_IL.11,19_IC1154720.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Moscow, 48",
+    "normalized_label": "moscow 48",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Moscow-Office-Locations-EI_IE7633.4,10_IL.11,17_IC3348306.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Munich, BY",
+    "normalized_label": "munich by",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Munich-Office-Locations-EI_IE7633.4,10_IL.11,17_IC4990924.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Reading, ENG",
+    "normalized_label": "reading eng",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Reading-Office-Locations-EI_IE7633.4,10_IL.11,18_IC2675152.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Zürich, ZH",
+    "normalized_label": "z rich zh",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Zürich-Office-Locations-EI_IE7633.4,10_IL.11,17_IC3297851.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Bengaluru, KA",
+    "normalized_label": "bengaluru ka",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Bengaluru-Office-Locations-EI_IE7633.4,10_IL.11,20_IC2940587.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Hsinchu, TXG",
+    "normalized_label": "hsinchu txg",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Hsinchu-Office-Locations-EI_IE7633.4,10_IL.11,18_IC4915323.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Mumbai, MH",
+    "normalized_label": "mumbai mh",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Mumbai-Office-Locations-EI_IE7633.4,10_IL.11,17_IC2851180.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Pudong, 23",
+    "normalized_label": "pudong 23",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Pudong-Office-Locations-EI_IE7633.4,10_IL.11,17_IC2415109.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Pune, MH",
+    "normalized_label": "pune mh",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Pune-Office-Locations-EI_IE7633.4,10_IL.11,15_IC2856202.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Shanghai, 23",
+    "normalized_label": "shanghai 23",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Shanghai-Office-Locations-EI_IE7633.4,10_IL.11,19_IC2416009.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "NVIDIA",
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "office_url": "https://www.glassdoor.com/Location/All-NVIDIA-Taipei-Office-Locations-EI_IE7633.4,10_IL.11,17_IC3271041.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:41.534266+00:00"
+  },
+  {
+    "company": "TSMC",
+    "raw_label": "San Jose, MP",
+    "normalized_label": "san jose mp",
+    "office_url": "https://www.glassdoor.com/Location/All-TSMC-San-Jose-Office-Locations-EI_IE4130.4,8_IL.9,17_IC5022815.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:48.805212+00:00"
+  },
+  {
+    "company": "TSMC",
+    "raw_label": "Hsinchu, TXG",
+    "normalized_label": "hsinchu txg",
+    "office_url": "https://www.glassdoor.com/Location/All-TSMC-Hsinchu-Office-Locations-EI_IE4130.4,8_IL.9,16_IC4915323.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:48.805212+00:00"
+  },
+  {
+    "company": "Micro-Star International",
+    "raw_label": "Frankfurt am Main, HE",
+    "normalized_label": "frankfurt am main he",
+    "office_url": "https://www.glassdoor.com/Location/All-Micro-Star-International-Frankfurt-am-Main-Office-Locations-EI_IE41141.4,28_IL.29,46_IC2632180.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:55.324210+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Boise, ID",
+    "normalized_label": "boise id",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Boise-Office-Locations-EI_IE1093161.4,10_IL.11,16_IC1127927.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Corvallis, OR",
+    "normalized_label": "corvallis or",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Corvallis-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC1151455.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Fort Collins, CO",
+    "normalized_label": "fort collins co",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Fort-Collins-Office-Locations-EI_IE1093161.4,10_IL.11,23_IC1148233.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Guadalajara, JAL",
+    "normalized_label": "guadalajara jal",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Guadalajara-Office-Locations-EI_IE1093161.4,10_IL.11,22_IC3486357.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Houston, TX",
+    "normalized_label": "houston tx",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Houston-Office-Locations-EI_IE1093161.4,10_IL.11,18_IC1140171.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Palo Alto, CA",
+    "normalized_label": "palo alto ca",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Palo-Alto-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC1147434.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Portland, OR",
+    "normalized_label": "portland or",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Portland-Office-Locations-EI_IE1093161.4,10_IL.11,19_IC1151614.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "San Diego, CA",
+    "normalized_label": "san diego ca",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-San-Diego-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC1147311.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "San Jose, CA",
+    "normalized_label": "san jose",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-San-Jose-Office-Locations-EI_IE1093161.4,10_IL.11,19_IC1147436.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Spring, TX",
+    "normalized_label": "spring tx",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Spring-Office-Locations-EI_IE1093161.4,10_IL.11,17_IC1140222.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Sunnyvale, CA",
+    "normalized_label": "sunnyvale ca",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Sunnyvale-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC1147442.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Tlaquepaque, JAL",
+    "normalized_label": "tlaquepaque jal",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Tlaquepaque-Office-Locations-EI_IE1093161.4,10_IL.11,22_IC3486348.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Vancouver, WA",
+    "normalized_label": "vancouver wa",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Vancouver-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC1150413.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Zapopan, JAL",
+    "normalized_label": "zapopan jal",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Zapopan-Office-Locations-EI_IE1093161.4,10_IL.11,18_IC3487018.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Barcelona, CT",
+    "normalized_label": "barcelona ct",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Barcelona-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC2547194.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Boulogne-Billancourt, A8",
+    "normalized_label": "boulogne billancourt a8",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Boulogne-Billancourt-Office-Locations-EI_IE1093161.4,10_IL.11,31_IC3040032.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Bucharest, B",
+    "normalized_label": "bucharest b",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Bucharest-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC3184907.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Cambridge, ENG",
+    "normalized_label": "cambridge eng",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Cambridge-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC2662516.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Meudon, A8",
+    "normalized_label": "meudon a8",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Meudon-Office-Locations-EI_IE1093161.4,10_IL.11,17_IC3019026.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Paris, A8",
+    "normalized_label": "paris a8",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Paris-Office-Locations-EI_IE1093161.4,10_IL.11,16_IC2881970.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Sant Cugat del Vallès, CT",
+    "normalized_label": "sant cugat del vall s ct",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Sant-Cugat-del-Vallès-Office-Locations-EI_IE1093161.4,10_IL.11,32_IC4843928.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Bengaluru, KA",
+    "normalized_label": "bengaluru ka",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Bengaluru-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC2940587.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Singapore",
+    "normalized_label": "singapore",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Singapore-Office-Locations-EI_IE1093161.4,10_IL.11,20_IC3235921.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Taipei-Office-Locations-EI_IE1093161.4,10_IL.11,17_IC3271041.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Tuas, W",
+    "normalized_label": "tuas w",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Tuas-Office-Locations-EI_IE1093161.4,10_IL.11,15_IC3235538.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "HP Inc.",
+    "raw_label": "Whitefield, KA",
+    "normalized_label": "whitefield ka",
+    "office_url": "https://www.glassdoor.com/Location/All-HP-Inc-Whitefield-Office-Locations-EI_IE1093161.4,10_IL.11,21_IC2941717.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:52:59.483773+00:00"
+  },
+  {
+    "company": "Quanta Computer",
+    "raw_label": "Fremont, CA",
+    "normalized_label": "fremont ca",
+    "office_url": "https://www.glassdoor.com/Location/All-Quanta-Computer-Fremont-Office-Locations-EI_IE11939.4,19_IL.20,27_IC1147355.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:02.632313+00:00"
+  },
+  {
+    "company": "Wistron",
+    "raw_label": "Lake Forest, CA",
+    "normalized_label": "lake forest ca",
+    "office_url": "https://www.glassdoor.com/Location/All-Wistron-Lake-Forest-Office-Locations-EI_IE15218.4,11_IL.12,23_IC1146811.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:06.675719+00:00"
+  },
+  {
+    "company": "Wistron",
+    "raw_label": "Rolling Meadows, IL",
+    "normalized_label": "rolling meadows il",
+    "office_url": "https://www.glassdoor.com/Location/All-Wistron-Rolling-Meadows-Office-Locations-EI_IE15218.4,11_IL.12,27_IC1128962.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:06.676743+00:00"
+  },
+  {
+    "company": "Wistron",
+    "raw_label": "Shanghai, 23",
+    "normalized_label": "shanghai 23",
+    "office_url": "https://www.glassdoor.com/Location/All-Wistron-Shanghai-Office-Locations-EI_IE15218.4,11_IL.12,20_IC2416009.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:06.676743+00:00"
+  },
+  {
+    "company": "Wistron",
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "office_url": "https://www.glassdoor.com/Location/All-Wistron-Taipei-Office-Locations-EI_IE15218.4,11_IL.12,18_IC3271041.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:06.676743+00:00"
+  },
+  {
+    "company": "Wistron",
+    "raw_label": "Wuhan, 12",
+    "normalized_label": "wuhan 12",
+    "office_url": "https://www.glassdoor.com/Location/All-Wistron-Wuhan-Office-Locations-EI_IE15218.4,11_IL.12,17_IC2478891.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:06.676743+00:00"
+  },
+  {
+    "company": "Delta Electronics",
+    "raw_label": "Fremont, CA",
+    "normalized_label": "fremont ca",
+    "office_url": "https://www.glassdoor.com/Location/All-Delta-Electronics-Fremont-Office-Locations-EI_IE41146.4,21_IL.22,29_IC1147355.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:41.786017+00:00"
+  },
+  {
+    "company": "Delta Electronics",
+    "raw_label": "Hoofddorp, NH",
+    "normalized_label": "hoofddorp nh",
+    "office_url": "https://www.glassdoor.com/Location/All-Delta-Electronics-Hoofddorp-Office-Locations-EI_IE41146.4,21_IL.22,31_IC3063772.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:41.786017+00:00"
+  },
+  {
+    "company": "Delta Electronics",
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "office_url": "https://www.glassdoor.com/Location/All-Delta-Electronics-Taipei-Office-Locations-EI_IE41146.4,21_IL.22,28_IC3271041.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:41.786017+00:00"
+  },
+  {
+    "company": "Delta Electronics",
+    "raw_label": "Notting Hill, VIC",
+    "normalized_label": "notting hill vic",
+    "office_url": "https://www.glassdoor.com/Location/All-Delta-Electronics-Notting-Hill-Office-Locations-EI_IE41146.4,21_IL.22,34_IC2257042.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:41.786017+00:00"
+  },
+  {
+    "company": "Inventec",
+    "raw_label": "Santa Clara, CA",
+    "normalized_label": "santa clara ca",
+    "office_url": "https://www.glassdoor.com/Location/All-Inventec-Santa-Clara-Office-Locations-EI_IE13485.4,12_IL.13,24_IC1147439.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:44.973000+00:00"
+  },
+  {
+    "company": "Pegatron",
+    "raw_label": "Jeffersonville, IN",
+    "normalized_label": "jeffersonville in",
+    "office_url": "https://www.glassdoor.com/Location/All-Pegatron-Jeffersonville-Office-Locations-EI_IE337948.4,12_IL.13,27_IC1145141.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:53:48.103040+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Austin, TX",
+    "normalized_label": "austin tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Austin-Office-Locations-EI_IE8983.4,19_IL.20,26_IC1139761.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Irving, TX",
+    "normalized_label": "irving tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Irving-Office-Locations-EI_IE8983.4,19_IL.20,26_IC1140006.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Jersey City, NJ",
+    "normalized_label": "jersey city nj",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Jersey-City-Office-Locations-EI_IE8983.4,19_IL.20,31_IC1126819.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Kanata, ON",
+    "normalized_label": "kanata on",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Kanata-Office-Locations-EI_IE8983.4,19_IL.20,26_IC2282818.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "San Jose, CA",
+    "normalized_label": "san jose",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-San-Jose-Office-Locations-EI_IE8983.4,19_IL.20,28_IC1147436.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Toronto, ON",
+    "normalized_label": "toronto on",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Toronto-Office-Locations-EI_IE8983.4,19_IL.20,27_IC2281069.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Cork, M",
+    "normalized_label": "cork m",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Cork-Office-Locations-EI_IE8983.4,19_IL.20,24_IC4325638.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "London, ENG",
+    "normalized_label": "london eng",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-London-Office-Locations-EI_IE8983.4,19_IL.20,26_IC2671300.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Munich, BY",
+    "normalized_label": "munich by",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Munich-Office-Locations-EI_IE8983.4,19_IL.20,26_IC4990924.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Paddington, ENG",
+    "normalized_label": "paddington eng",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Paddington-Office-Locations-EI_IE8983.4,19_IL.20,30_IC3527325.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Trend Micro Inc.",
+    "raw_label": "Tokyo, 40",
+    "normalized_label": "tokyo 40",
+    "office_url": "https://www.glassdoor.com/Location/All-Trend-Micro-Inc-Tokyo-Office-Locations-EI_IE8983.4,19_IL.20,25_IC2851580.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:01.138141+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Aliso, CA",
+    "normalized_label": "aliso ca",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Aliso-Office-Locations-EI_IE1327.4,21_IL.22,27_IC3789361.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Austin, TX",
+    "normalized_label": "austin tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Austin-Office-Locations-EI_IE1327.4,21_IL.22,28_IC1139761.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Bedford, MA",
+    "normalized_label": "bedford ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Bedford-Office-Locations-EI_IE1327.4,21_IL.22,29_IC1154527.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Boston, MA",
+    "normalized_label": "boston ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Boston-Office-Locations-EI_IE1327.4,21_IL.22,28_IC1154532.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Boydton, VA",
+    "normalized_label": "boydton va",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Boydton-Office-Locations-EI_IE1327.4,21_IL.22,29_IC1129623.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Cambridge, MA",
+    "normalized_label": "cambridge ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Cambridge-Office-Locations-EI_IE1327.4,21_IL.22,31_IC1154545.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Canada, KY",
+    "normalized_label": "canada ky",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Canada-Office-Locations-EI_IE1327.4,21_IL.22,28_IC1137126.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Canton, MA",
+    "normalized_label": "canton ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Canton-Office-Locations-EI_IE1327.4,21_IL.22,28_IC1154546.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Cedar Park, TX",
+    "normalized_label": "cedar park tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Cedar-Park-Office-Locations-EI_IE1327.4,21_IL.22,32_IC1139765.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Framingham, MA",
+    "normalized_label": "framingham ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Framingham-Office-Locations-EI_IE1327.4,21_IL.22,32_IC1154571.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Franklin, MA",
+    "normalized_label": "franklin ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Franklin-Office-Locations-EI_IE1327.4,21_IL.22,30_IC1154572.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Fuquay-Varina, NC",
+    "normalized_label": "fuquay varina nc",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Fuquay-Varina-Office-Locations-EI_IE1327.4,21_IL.22,35_IC3757296.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Georgetown, TX",
+    "normalized_label": "georgetown tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Georgetown-Office-Locations-EI_IE1327.4,21_IL.22,32_IC1139774.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Hopkinton, MA",
+    "normalized_label": "hopkinton ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Hopkinton-Office-Locations-EI_IE1327.4,21_IL.22,31_IC1154589.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "India, TX",
+    "normalized_label": "india tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-India-Office-Locations-EI_IE1327.4,21_IL.22,27_IC3759223.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Land O' Lakes, FL",
+    "normalized_label": "land o lakes fl",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Land-O-Lakes-Office-Locations-EI_IE1327.4,21_IL.22,34_IC3817049.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Leander, TX",
+    "normalized_label": "leander tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Leander-Office-Locations-EI_IE1327.4,21_IL.22,29_IC1139779.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Pflugerville, TX",
+    "normalized_label": "pflugerville tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Pflugerville-Office-Locations-EI_IE1327.4,21_IL.22,34_IC1139790.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Quincy, MA",
+    "normalized_label": "quincy ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Quincy-Office-Locations-EI_IE1327.4,21_IL.22,28_IC1154667.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Round Rock, TX",
+    "normalized_label": "round rock tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Round-Rock-Office-Locations-EI_IE1327.4,21_IL.22,32_IC1139794.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "San Marcos, TX",
+    "normalized_label": "san marcos tx",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-San-Marcos-Office-Locations-EI_IE1327.4,21_IL.22,32_IC1139795.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Satellite Beach, FL",
+    "normalized_label": "satellite beach fl",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Satellite-Beach-Office-Locations-EI_IE1327.4,21_IL.22,37_IC1154294.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Wellesley, MA",
+    "normalized_label": "wellesley ma",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Wellesley-Office-Locations-EI_IE1327.4,21_IL.22,31_IC1154708.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Bengaluru, KA",
+    "normalized_label": "bengaluru ka",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Bengaluru-Office-Locations-EI_IE1327.4,21_IL.22,31_IC2940587.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Dell Technologies",
+    "raw_label": "Domlur, KA",
+    "normalized_label": "domlur ka",
+    "office_url": "https://www.glassdoor.com/Location/All-Dell-Technologies-Domlur-Office-Locations-EI_IE1327.4,21_IL.22,28_IC4470560.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:04.144299+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Chicago, IL",
+    "normalized_label": "chicago il",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Chicago-Office-Locations-EI_IE8034.4,10_IL.11,18_IC1128808.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Morrisville, NC",
+    "normalized_label": "morrisville nc",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Morrisville-Office-Locations-EI_IE8034.4,10_IL.11,22_IC1138956.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "San Francisco, CA",
+    "normalized_label": "san francisco ca",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-San-Francisco-Office-Locations-EI_IE8034.4,10_IL.11,24_IC1147401.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "San Jose, CA",
+    "normalized_label": "san jose",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-San-Jose-Office-Locations-EI_IE8034.4,10_IL.11,19_IC1147436.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Bratislava, 02",
+    "normalized_label": "bratislava 02",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Bratislava-Office-Locations-EI_IE8034.4,10_IL.11,21_IC2907054.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Stuttgart, BW",
+    "normalized_label": "stuttgart bw",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Stuttgart-Office-Locations-EI_IE8034.4,10_IL.11,20_IC2507190.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Beijing, 22",
+    "normalized_label": "beijing 22",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Beijing-Office-Locations-EI_IE8034.4,10_IL.11,18_IC2398510.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Bengaluru, KA",
+    "normalized_label": "bengaluru ka",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Bengaluru-Office-Locations-EI_IE8034.4,10_IL.11,20_IC2940587.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Changping, 22",
+    "normalized_label": "changping 22",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Changping-Office-Locations-EI_IE8034.4,10_IL.11,20_IC2405661.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Haidian, 22",
+    "normalized_label": "haidian 22",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Haidian-Office-Locations-EI_IE8034.4,10_IL.11,18_IC2405685.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Hong Kong",
+    "normalized_label": "hong kong",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Hong-Kong-Office-Locations-EI_IE8034.4,10_IL.11,20_IC2308631.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Shanghai, 23",
+    "normalized_label": "shanghai 23",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Shanghai-Office-Locations-EI_IE8034.4,10_IL.11,19_IC2416009.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Shenzhenzhen, 02",
+    "normalized_label": "shenzhenzhen 02",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Shenzhenzhen-Office-Locations-EI_IE8034.4,10_IL.11,23_IC2441398.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Xiamen, 07",
+    "normalized_label": "xiamen 07",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Xiamen-Office-Locations-EI_IE8034.4,10_IL.11,17_IC2564138.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Buenos Aires, C",
+    "normalized_label": "buenos aires c",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Buenos-Aires-Office-Locations-EI_IE8034.4,10_IL.11,23_IC2242084.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Campinas, SP",
+    "normalized_label": "campinas sp",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Campinas-Office-Locations-EI_IE8034.4,10_IL.11,19_IC2490130.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Indaiatuba, SP",
+    "normalized_label": "indaiatuba sp",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Indaiatuba-Office-Locations-EI_IE8034.4,10_IL.11,21_IC2480058.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Itu, SP",
+    "normalized_label": "itu sp",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Itu-Office-Locations-EI_IE8034.4,10_IL.11,14_IC2490672.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Martínez, B",
+    "normalized_label": "mart nez b",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Martínez-Office-Locations-EI_IE8034.4,10_IL.11,19_IC2207815.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "São Paulo, SP",
+    "normalized_label": "s o paulo sp",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-São-Paulo-Office-Locations-EI_IE8034.4,10_IL.11,20_IC2479061.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Sorocaba, SP",
+    "normalized_label": "sorocaba sp",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Sorocaba-Office-Locations-EI_IE8034.4,10_IL.11,19_IC2475809.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Vicente López, B",
+    "normalized_label": "vicente l pez b",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Vicente-López-Office-Locations-EI_IE8034.4,10_IL.11,24_IC2211608.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  },
+  {
+    "company": "Lenovo",
+    "raw_label": "Sydney, NSW",
+    "normalized_label": "sydney nsw",
+    "office_url": "https://www.glassdoor.com/Location/All-Lenovo-Sydney-Office-Locations-EI_IE8034.4,10_IL.11,17_IC2235932.htm",
+    "source": "office-location",
+    "discovered_at": "2026-06-28T06:54:21.238028+00:00"
+  }
+]

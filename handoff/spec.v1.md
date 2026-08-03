@@ -1,0 +1,137 @@
+# Glassdoor 聚合評分抓取工具 v1 Spec（重寫版）
+
+## Summary
+- 目標是建立一個 Python 抓取工具，針對指定公司與 region pool，抓取 Glassdoor review 頁面的聚合評分資料，不抓單筆 review 內容。
+- 第一版以 CLI 批次執行為主，主要輸出 `CSV` 與 `JSON` 檔案；未來可延伸成 FastAPI 服務，但 v1 不實作 API。
+- 存取策略採「手動登入 session」模式：工具需能使用既有 cookies/session 抓取與驗證頁面，避免把匿名抓取成功率當成前提。
+- 第一版不在採集流程內直接產出 `Taiwan/APAC/EMEA/Americas/Global` 分群欄位，但要保留足夠的原始與標準化 region 資訊，讓後續分析流程可做分群。
+- 相比原始 spec，需補強的核心是：輸入邊界、region pool 建立規則、頁面驗證規則、失敗紀錄格式、驗收標準。
+
+## Implementation Changes
+- Python 執行環境
+  - 使用 Python 開發、安裝相依與執行 CLI 時，必須使用虛擬環境（例如 `venv`），不可直接使用系統全域 Python 環境。
+  - 預設使用專案根目錄下的 `.venv` 作為虛擬環境目錄名稱，除非有明確理由才使用其他命名。
+  - 專案應提供清楚的虛擬環境建立與啟用方式，並以 `.venv` 內的 interpreter / packages 為準。
+- 輸入模型
+  - 預設內建一份公司 seed 清單，內容即目前 spec 列出的公司。
+  - 每家公司至少包含：`display_name`、`company_slug_hint`（可空）、`glassdoor_entity_hint`（可空）、`priority`（可空）。
+  - region pool 由兩部分組成：各公司 `office locations` 聯集，加上一份人工維護的 region seed 清單。
+- Region pool 建立
+  - 先抓每家公司的 office locations 頁面，萃取城市/地區名稱作為 company-specific seeds。
+  - 再將所有公司 location 聯集形成 global candidate pool。
+  - 再與人工 region seed 合併，得到實際掃描 pool。
+  - 每個 region 保留至少三種值：`raw_label`、`normalized_label`、`country_or_macro_hint`。
+  - v1 只做 normalization，不做最終 business grouping。
+- Review 頁面搜尋與驗證
+  - 對每個 `company x region` 組合，嘗試定位對應 review 頁面。
+  - 若 region 為空或 header 不含地區，視為 `Global` 候選頁。
+  - 必須做頁面 header 驗證：例如預期 `ASUS Taipei reviews`，實際頁面若為 `ASUS Shanghai reviews`，則該筆不可算成功。
+  - 驗證通過條件至少包含：公司名稱匹配、region 名稱匹配或為 global case、頁面可讀到目標聚合欄位。
+  - 驗證失敗不可 silently fallback 成成功資料。
+- 抓取欄位
+  - 成功資料欄位至少包含：
+    - `company`
+    - `requested_region`
+    - `resolved_region`
+    - `country`
+    - `review_url`
+    - `overall`
+    - `recommend`
+    - `ceo_approval`
+    - `total_reviews`
+    - `diversity_inclusion`
+    - `work_life_balance`
+    - `compensation_benefits`
+    - `culture_values`
+    - `career_opportunities`
+    - `senior_management`
+    - `header_text`
+    - `scraped_at`
+  - 建議再加：
+    - `company_input_source`
+    - `region_source`（office-location / manual-seed）
+    - `validation_status`
+- 輸出設計
+  - 階段一輸出：`office_locations.json/csv`，保存 company-specific office label、normalized label 與 office detail URL。
+  - 階段二輸出：`company_region_review_urls.json/csv`，保存每個 `company x region` 的 review URL、解析狀態與失敗原因。
+  - 主資料輸出：只包含驗證成功的 company-region 聚合評分紀錄，提供 `CSV` 與 `JSON`。
+  - 稽核輸出：另存 attempt/error log，記錄所有失敗、跳過、驗證不符、欄位缺失與存取問題。
+  - 執行摘要至少包含：公司數、region 候選數、成功筆數、驗證失敗筆數、無結果筆數、錯誤筆數。
+- 執行介面
+  - v1 提供 CLI，支援：
+    - 指定公司子集
+    - 指定是否重建 region pool
+    - 指定輸出目錄
+    - 指定 cookies/session 輸入來源
+    - 指定是否只跑驗證不輸出主資料
+    - 指定執行全部流程或單獨執行 `discover-locations`、`resolve-review-urls`、`probe-review-url-gaps`、`extract-metrics`
+    - 指定是否重建 review URL manifest
+    - 指定 gap probe 的公司、地區、單批上限與是否重試失敗紀錄
+    - 指定 metrics extraction 的單批上限、是否重試驗證失敗紀錄與進度輸出頻率
+  - FastAPI 僅列為後續延伸方向，不在 v1 驗收範圍。
+- 可靠性與可維護性
+  - 抓取流程分成四段：`discover locations`、`resolve review pages`、`probe review URL gaps`、`extract metrics`。
+  - 各階段產物需分別持久化；location inventory、review URL manifest 與 metrics extraction 採增量寫入，以支援中斷續跑。
+  - 地區 review URL 優先由 Office Locations 頁面導覽取得。
+  - 對未解析組合，可重用 region pool 既有 Office URL 中的 Glassdoor location ID 建立候選 URL；候選必須重新驗證 header 與聚合欄位。
+  - 不使用 keyword search 或隱藏搜尋 fallback。
+  - Gap probe 必須支援請求間隔、隨機延遲與週期冷卻；偵測到 rate limit、CAPTCHA 或登入限制時立即停止，不得繼續批次請求。
+  - Metrics extraction 同樣必須支援請求間隔、隨機延遲與週期冷卻；每筆完成後寫入 checkpoint，定期輸出進度，並在偵測到存取限制時立即停止且保留當筆可重試。
+  - 多個 Chrome debug port 若共用同一來源 IP，不得各自以完整速率平行抓取；如實作多 worker，必須共享全域請求節流器。
+  - parser 與 page verification 規則需模組化，避免未來頁面結構變動時整體重寫。
+  - 對缺值欄位要允許 `null`，但需在 log 中標記是頁面缺值還是 selector 失敗。
+- 合規與風險說明
+  - spec 需明確標記：實作前需確認 Glassdoor 使用條款、登入限制與資料使用邊界。
+  - v1 假設使用者自行提供合法可用的 session/cookies；工具不負責繞過登入或反爬機制。
+
+## Public Interfaces / Types
+- CLI 輸入
+  - `companies`: 預設 seed 或指定子集
+  - `session_source`: cookies/session 輸入來源
+  - `output_dir`
+  - `rebuild_region_pool: bool`
+  - `dry_validate: bool`
+- 主要輸出檔
+  - `office_locations.csv`
+  - `office_locations.json`
+  - `company_region_review_urls.csv`
+  - `company_region_review_urls.json`
+  - `reviews_aggregate.csv`
+  - `reviews_aggregate.json`
+  - `region_country_map.csv`
+  - `region_country_map.json`
+  - `attempt_log.csv` 或 `attempt_log.json`
+  - `run_summary.json`
+- 嘗試紀錄欄位
+  - `company`
+  - `requested_region`
+  - `candidate_url`
+  - `final_url`
+  - `status`
+  - `failure_reason`
+  - `header_text`
+  - `observed_region`
+  - `timestamp`
+
+## Test Plan
+- 單元測試
+  - region normalization
+  - header 驗證邏輯
+  - global vs region-specific 頁面判定
+  - 聚合欄位 parser 對缺欄位與格式變化的容錯
+- 整合測試
+  - 用固定 HTML fixture 驗證 location discovery、page verification、metric extraction 三段流程
+  - 至少包含：成功頁、header region 不符頁、global 頁、缺欄位頁、無結果頁
+- 驗收情境
+  - ASUS 可成功抓到 global 頁與至少一個 region 頁
+  - 遇到 region 名稱錯配時，資料不進主表但會進 attempt log
+  - 同一次執行可輸出成功資料與失敗摘要
+  - 未登入或 session 失效時，流程能明確失敗並留下可診斷原因
+
+## Assumptions
+- v1 只抓聚合評分頁，不抓單筆 review 文字內容。
+- v1 主要面向離線分析，先不做前後端產品化。
+- 公司名單先內建在 spec/設定中，不要求 day 1 外部化管理。
+- region pool 採「各公司 office locations 聯集 + 人工 seed」策略。
+- 分群需求延後到分析層；採集層只保留可分群所需的原始與標準化 region 資訊。
+- 成功與失敗紀錄分流保存，主表只保留驗證成功資料。
