@@ -1,7 +1,8 @@
 [CmdletBinding()]
 param(
     [int]$Port = 9223,
-    [int]$MaxExtractions
+    [int]$MaxExtractions,
+    [int]$ProgressEvery = 1
 )
 
 $ErrorActionPreference = "Stop"
@@ -44,8 +45,13 @@ if ($PSBoundParameters.ContainsKey("MaxExtractions")) {
     }
     $arguments += @("--max-extractions", $MaxExtractions)
 }
+if ($ProgressEvery -lt 1) {
+    throw "ProgressEvery 必須是 1 或更大的數字。"
+}
+$arguments += @("--progress-every", $ProgressEvery)
 
 Write-Output "只更新既有公司／地區評分，不會更新 office locations 或 review URL。"
+Write-Output "每處理 $ProgressEvery 筆顯示一次進度。"
 & $python @arguments
 if ($LASTEXITCODE -ne 0) {
     throw "評分更新失敗。請保留 artifacts 與備份資料，查看上方錯誤訊息。"

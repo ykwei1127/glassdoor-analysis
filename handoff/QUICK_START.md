@@ -102,6 +102,8 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\scripts\refresh_existing_metrics.ps1 -MaxExtractions 10
 ```
 
+腳本預設每完成 1 筆就會顯示一次進度，例如 `Extraction progress: 3/639`，所以不需要等到全部完成才知道目前跑到哪裡。每筆請求之間仍會依照安全設定等待數秒，看到進度慢慢增加是正常的。
+
 確認結果正常後，再執行不帶 `-MaxExtractions` 的完整更新。這兩支腳本都會先自動備份 `artifacts`。
 
 ## 更新完成後看哪裡？
