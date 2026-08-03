@@ -12,6 +12,49 @@ python -m venv .venv
 python -m pip install -e .
 ```
 
+## 前置條件
+
+### 基本環境
+
+- Windows PowerShell
+- Python 3.11 或以上
+- Google Chrome（只有使用 Chrome CDP 抓取模式時需要）
+- Git（若要從 repository 取得程式碼）
+
+建立虛擬環境並安裝專案：
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -e .
+```
+
+### Chrome remote debugging（使用 CDP 模式時）
+
+專案不會自動啟動 Chrome；它會連線到已經開啟的 Chrome remote debugging session。可以使用專案內的 PowerShell script 啟動獨立的 Chrome profile：
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\start_chrome_cdp.ps1
+```
+
+預設會在 `http://127.0.0.1:9223` 開啟 CDP。請在新開的 Chrome 視窗登入 Glassdoor，並用以下指令確認 Debug Port 已啟動：
+
+```powershell
+Invoke-WebRequest http://127.0.0.1:9223/json/version
+```
+
+如果要使用其他 port 或 Chrome 路徑：
+
+```powershell
+.\scripts\start_chrome_cdp.ps1 -Port 9224
+.\scripts\start_chrome_cdp.ps1 -ChromePath "C:\\Path\\to\\chrome.exe"
+```
+
+此 script 使用獨立的 Chrome profile，避免干擾平常使用的 Chrome profile。不要把該 profile、cookies 或登入資料提交到 Git。
+
+若不使用 Chrome CDP，也可以透過 `--session-source` 提供 session JSON 或 cookie header；但 Glassdoor 仍可能要求登入、CAPTCHA 或其他存取驗證。
+
 ## CLI
 
 ```powershell
