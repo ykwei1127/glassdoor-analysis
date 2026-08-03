@@ -1,0 +1,137 @@
+raw_label,normalized_label,country
+"Ciudad de Mexico, MEX",ciudad de mexico mex,Mexico
+"Fremont, CA",fremont ca,United States
+"Markham, ON",markham on,Canada
+"Barcelona, CT",barcelona ct,Spain
+"Budapest, BU",budapest bu,Hungary
+"Emmen, DR",emmen dr,Netherlands
+"Hemel Hempstead, ENG",hemel hempstead eng,United Kingdom
+"Milan, LOM",milan lom,Italy
+"Moravská Ostrava, MO",moravsk ostrava mo,Czechia
+"Noisy-le-Grand, A8",noisy le grand a8,France
+"Ratingen, NW",ratingen nw,Germany
+"Üsküdar, T34",sk dar t34,Turkey
+"Warsaw, MZ",warsaw mz,Poland
+"Bangkok, 10",bangkok 10,Thailand
+"Dubai, DU",dubai du,United Arab Emirates
+"Jakarta, JK",jakarta jk,Indonesia
+"Kuala Lumpur, 14",kuala lumpur 14,Malaysia
+"Manila, D9",manila d9,Philippines
+"Mumbai, MH",mumbai mh,India
+"Seoul, 11",seoul 11,South Korea
+Singapore,singapore,Singapore
+"Taipei, TPQ",taipei tpq,Taiwan
+"Tokyo, 40",tokyo 40,Japan
+"San Isidro, HUC",san isidro huc,Peru
+"Santiago, RM",santiago rm,Chile
+"São Paulo, SP",s o paulo sp,Brazil
+"Sydney, NSW",sydney nsw,Australia
+"Austin, TX",austin tx,United States
+"Beaverton, OR",beaverton or,United States
+"Bellevue, WA",bellevue wa,United States
+"Durham, NC",durham nc,United States
+"Hillsboro, OR",hillsboro or,United States
+"Redmond, WA",redmond wa,United States
+"Saint Louis, MO",saint louis mo,United States
+"San Francisco, CA",san francisco ca,United States
+"San Jose, CA",san jose,United States
+"Santa Clara, CA",santa clara ca,United States
+"Toronto, ON",toronto on,Canada
+"Westford, MA",westford ma,United States
+"Moscow, 48",moscow 48,Russia
+"Munich, BY",munich by,Germany
+"Reading, ENG",reading eng,United Kingdom
+"Zürich, ZH",z rich zh,Switzerland
+"Bengaluru, KA",bengaluru ka,India
+"Hsinchu, TXG",hsinchu txg,Taiwan
+"Pudong, 23",pudong 23,China
+"Pune, MH",pune mh,India
+"Shanghai, 23",shanghai 23,China
+"San Jose, MP",san jose mp,Costa Rica
+"Frankfurt am Main, HE",frankfurt am main he,Germany
+"Boise, ID",boise id,United States
+"Corvallis, OR",corvallis or,United States
+"Fort Collins, CO",fort collins co,United States
+"Guadalajara, JAL",guadalajara jal,Mexico
+"Houston, TX",houston tx,United States
+"Palo Alto, CA",palo alto ca,United States
+"Portland, OR",portland or,United States
+"San Diego, CA",san diego ca,United States
+"Spring, TX",spring tx,United States
+"Sunnyvale, CA",sunnyvale ca,United States
+"Tlaquepaque, JAL",tlaquepaque jal,Mexico
+"Vancouver, WA",vancouver wa,United States
+"Zapopan, JAL",zapopan jal,Mexico
+"Boulogne-Billancourt, A8",boulogne billancourt a8,France
+"Bucharest, B",bucharest b,Romania
+"Cambridge, ENG",cambridge eng,United Kingdom
+"Meudon, A8",meudon a8,France
+"Paris, A8",paris a8,France
+"Sant Cugat del Vallès, CT",sant cugat del vall s ct,Spain
+"Tuas, W",tuas w,Singapore
+"Whitefield, KA",whitefield ka,India
+"Lake Forest, CA",lake forest ca,United States
+"Rolling Meadows, IL",rolling meadows il,United States
+"Wuhan, 12",wuhan 12,China
+"Hoofddorp, NH",hoofddorp nh,Netherlands
+"Notting Hill, VIC",notting hill vic,Australia
+"Jeffersonville, IN",jeffersonville in,United States
+"Irving, TX",irving tx,United States
+"Jersey City, NJ",jersey city nj,United States
+"Kanata, ON",kanata on,Canada
+"Cork, M",cork m,Ireland
+"London, ENG",london eng,United Kingdom
+"Paddington, ENG",paddington eng,United Kingdom
+"Aliso, CA",aliso ca,United States
+"Bedford, MA",bedford ma,United States
+"Boston, MA",boston ma,United States
+"Boydton, VA",boydton va,United States
+"Cambridge, MA",cambridge ma,United States
+"Canada, KY",canada ky,United States
+"Canton, MA",canton ma,United States
+"Cedar Park, TX",cedar park tx,United States
+"Framingham, MA",framingham ma,United States
+"Franklin, MA",franklin ma,United States
+"Fuquay-Varina, NC",fuquay varina nc,United States
+"Georgetown, TX",georgetown tx,United States
+"Hopkinton, MA",hopkinton ma,United States
+"India, TX",india tx,United States
+"Land O' Lakes, FL",land o lakes fl,United States
+"Leander, TX",leander tx,United States
+"Pflugerville, TX",pflugerville tx,United States
+"Quincy, MA",quincy ma,United States
+"Round Rock, TX",round rock tx,United States
+"San Marcos, TX",san marcos tx,United States
+"Satellite Beach, FL",satellite beach fl,United States
+"Wellesley, MA",wellesley ma,United States
+"Domlur, KA",domlur ka,India
+"Chicago, IL",chicago il,United States
+"Morrisville, NC",morrisville nc,United States
+"Bratislava, 02",bratislava 02,Slovakia
+"Stuttgart, BW",stuttgart bw,Germany
+"Beijing, 22",beijing 22,China
+"Changping, 22",changping 22,China
+"Haidian, 22",haidian 22,China
+Hong Kong,hong kong,Hong Kong
+"Shenzhenzhen, 02",shenzhenzhen 02,China
+"Xiamen, 07",xiamen 07,China
+"Buenos Aires, C",buenos aires c,Argentina
+"Campinas, SP",campinas sp,Brazil
+"Indaiatuba, SP",indaiatuba sp,Brazil
+"Itu, SP",itu sp,Brazil
+"Martínez, B",mart nez b,Argentina
+"Sorocaba, SP",sorocaba sp,Brazil
+"Vicente López, B",vicente l pez b,Argentina
+Global,global,Global
+Taipei,taipei,Taiwan
+Hsinchu,hsinchu,Taiwan
+Taoyuan,taoyuan,Taiwan
+Shanghai,shanghai,China
+Shenzhen,shenzhen,China
+Tokyo,tokyo,Japan
+Seoul,seoul,South Korea
+Austin,austin,United States
+Seattle,seattle,United States
+London,london,United Kingdom
+Dublin,dublin,Ireland
+Munich,munich,Germany

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Generated knowledge graph output
+graphify-out/
+
+# Local authentication/session data
+session.json
+cookies.json
+*.log

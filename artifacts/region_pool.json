@@ -1,0 +1,818 @@
+[
+  {
+    "raw_label": "Ciudad de Mexico, MEX",
+    "normalized_label": "ciudad de mexico mex",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Fremont, CA",
+    "normalized_label": "fremont ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Markham, ON",
+    "normalized_label": "markham on",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Barcelona, CT",
+    "normalized_label": "barcelona ct",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Budapest, BU",
+    "normalized_label": "budapest bu",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Emmen, DR",
+    "normalized_label": "emmen dr",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Hemel Hempstead, ENG",
+    "normalized_label": "hemel hempstead eng",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Milan, LOM",
+    "normalized_label": "milan lom",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Moravská Ostrava, MO",
+    "normalized_label": "moravsk ostrava mo",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Noisy-le-Grand, A8",
+    "normalized_label": "noisy le grand a8",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Ratingen, NW",
+    "normalized_label": "ratingen nw",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Üsküdar, T34",
+    "normalized_label": "sk dar t34",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Warsaw, MZ",
+    "normalized_label": "warsaw mz",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Bangkok, 10",
+    "normalized_label": "bangkok 10",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Dubai, DU",
+    "normalized_label": "dubai du",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Jakarta, JK",
+    "normalized_label": "jakarta jk",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Kuala Lumpur, 14",
+    "normalized_label": "kuala lumpur 14",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Manila, D9",
+    "normalized_label": "manila d9",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Mumbai, MH",
+    "normalized_label": "mumbai mh",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Seoul, 11",
+    "normalized_label": "seoul 11",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Singapore",
+    "normalized_label": "singapore",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Taipei, TPQ",
+    "normalized_label": "taipei tpq",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Tokyo, 40",
+    "normalized_label": "tokyo 40",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "San Isidro, HUC",
+    "normalized_label": "san isidro huc",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Santiago, RM",
+    "normalized_label": "santiago rm",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "São Paulo, SP",
+    "normalized_label": "s o paulo sp",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Sydney, NSW",
+    "normalized_label": "sydney nsw",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Austin, TX",
+    "normalized_label": "austin tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Beaverton, OR",
+    "normalized_label": "beaverton or",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Bellevue, WA",
+    "normalized_label": "bellevue wa",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Durham, NC",
+    "normalized_label": "durham nc",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Hillsboro, OR",
+    "normalized_label": "hillsboro or",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Redmond, WA",
+    "normalized_label": "redmond wa",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Saint Louis, MO",
+    "normalized_label": "saint louis mo",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "San Francisco, CA",
+    "normalized_label": "san francisco ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "San Jose, CA",
+    "normalized_label": "san jose",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Santa Clara, CA",
+    "normalized_label": "santa clara ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Toronto, ON",
+    "normalized_label": "toronto on",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Westford, MA",
+    "normalized_label": "westford ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Moscow, 48",
+    "normalized_label": "moscow 48",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Munich, BY",
+    "normalized_label": "munich by",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Reading, ENG",
+    "normalized_label": "reading eng",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Zürich, ZH",
+    "normalized_label": "z rich zh",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Bengaluru, KA",
+    "normalized_label": "bengaluru ka",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Hsinchu, TXG",
+    "normalized_label": "hsinchu txg",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Pudong, 23",
+    "normalized_label": "pudong 23",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Pune, MH",
+    "normalized_label": "pune mh",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Shanghai, 23",
+    "normalized_label": "shanghai 23",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "San Jose, MP",
+    "normalized_label": "san jose mp",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Frankfurt am Main, HE",
+    "normalized_label": "frankfurt am main he",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Boise, ID",
+    "normalized_label": "boise id",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Corvallis, OR",
+    "normalized_label": "corvallis or",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Fort Collins, CO",
+    "normalized_label": "fort collins co",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Guadalajara, JAL",
+    "normalized_label": "guadalajara jal",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Houston, TX",
+    "normalized_label": "houston tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Palo Alto, CA",
+    "normalized_label": "palo alto ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Portland, OR",
+    "normalized_label": "portland or",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "San Diego, CA",
+    "normalized_label": "san diego ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Spring, TX",
+    "normalized_label": "spring tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Sunnyvale, CA",
+    "normalized_label": "sunnyvale ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Tlaquepaque, JAL",
+    "normalized_label": "tlaquepaque jal",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Vancouver, WA",
+    "normalized_label": "vancouver wa",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Zapopan, JAL",
+    "normalized_label": "zapopan jal",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Boulogne-Billancourt, A8",
+    "normalized_label": "boulogne billancourt a8",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Bucharest, B",
+    "normalized_label": "bucharest b",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Cambridge, ENG",
+    "normalized_label": "cambridge eng",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Meudon, A8",
+    "normalized_label": "meudon a8",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Paris, A8",
+    "normalized_label": "paris a8",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Sant Cugat del Vallès, CT",
+    "normalized_label": "sant cugat del vall s ct",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Tuas, W",
+    "normalized_label": "tuas w",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Whitefield, KA",
+    "normalized_label": "whitefield ka",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Lake Forest, CA",
+    "normalized_label": "lake forest ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Rolling Meadows, IL",
+    "normalized_label": "rolling meadows il",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Wuhan, 12",
+    "normalized_label": "wuhan 12",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Hoofddorp, NH",
+    "normalized_label": "hoofddorp nh",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Notting Hill, VIC",
+    "normalized_label": "notting hill vic",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Jeffersonville, IN",
+    "normalized_label": "jeffersonville in",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Irving, TX",
+    "normalized_label": "irving tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Jersey City, NJ",
+    "normalized_label": "jersey city nj",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Kanata, ON",
+    "normalized_label": "kanata on",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Cork, M",
+    "normalized_label": "cork m",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "London, ENG",
+    "normalized_label": "london eng",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Paddington, ENG",
+    "normalized_label": "paddington eng",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Aliso, CA",
+    "normalized_label": "aliso ca",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Bedford, MA",
+    "normalized_label": "bedford ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Boston, MA",
+    "normalized_label": "boston ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Boydton, VA",
+    "normalized_label": "boydton va",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Cambridge, MA",
+    "normalized_label": "cambridge ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Canada, KY",
+    "normalized_label": "canada ky",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Canton, MA",
+    "normalized_label": "canton ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Cedar Park, TX",
+    "normalized_label": "cedar park tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Framingham, MA",
+    "normalized_label": "framingham ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Franklin, MA",
+    "normalized_label": "franklin ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Fuquay-Varina, NC",
+    "normalized_label": "fuquay varina nc",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Georgetown, TX",
+    "normalized_label": "georgetown tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Hopkinton, MA",
+    "normalized_label": "hopkinton ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "India, TX",
+    "normalized_label": "india tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Land O' Lakes, FL",
+    "normalized_label": "land o lakes fl",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Leander, TX",
+    "normalized_label": "leander tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Pflugerville, TX",
+    "normalized_label": "pflugerville tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Quincy, MA",
+    "normalized_label": "quincy ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Round Rock, TX",
+    "normalized_label": "round rock tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "San Marcos, TX",
+    "normalized_label": "san marcos tx",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Satellite Beach, FL",
+    "normalized_label": "satellite beach fl",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Wellesley, MA",
+    "normalized_label": "wellesley ma",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Domlur, KA",
+    "normalized_label": "domlur ka",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Chicago, IL",
+    "normalized_label": "chicago il",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Morrisville, NC",
+    "normalized_label": "morrisville nc",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Bratislava, 02",
+    "normalized_label": "bratislava 02",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Stuttgart, BW",
+    "normalized_label": "stuttgart bw",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Beijing, 22",
+    "normalized_label": "beijing 22",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Changping, 22",
+    "normalized_label": "changping 22",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Haidian, 22",
+    "normalized_label": "haidian 22",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Hong Kong",
+    "normalized_label": "hong kong",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Shenzhenzhen, 02",
+    "normalized_label": "shenzhenzhen 02",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Xiamen, 07",
+    "normalized_label": "xiamen 07",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Buenos Aires, C",
+    "normalized_label": "buenos aires c",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Campinas, SP",
+    "normalized_label": "campinas sp",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Indaiatuba, SP",
+    "normalized_label": "indaiatuba sp",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Itu, SP",
+    "normalized_label": "itu sp",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Martínez, B",
+    "normalized_label": "mart nez b",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Sorocaba, SP",
+    "normalized_label": "sorocaba sp",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Vicente López, B",
+    "normalized_label": "vicente l pez b",
+    "country_or_macro_hint": null,
+    "source": "office-location"
+  },
+  {
+    "raw_label": "Global",
+    "normalized_label": "global",
+    "country_or_macro_hint": "Global",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Taipei",
+    "normalized_label": "taipei",
+    "country_or_macro_hint": "Taiwan",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Hsinchu",
+    "normalized_label": "hsinchu",
+    "country_or_macro_hint": "Taiwan",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Taoyuan",
+    "normalized_label": "taoyuan",
+    "country_or_macro_hint": "Taiwan",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Shanghai",
+    "normalized_label": "shanghai",
+    "country_or_macro_hint": "APAC",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Shenzhen",
+    "normalized_label": "shenzhen",
+    "country_or_macro_hint": "APAC",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Tokyo",
+    "normalized_label": "tokyo",
+    "country_or_macro_hint": "APAC",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Seoul",
+    "normalized_label": "seoul",
+    "country_or_macro_hint": "APAC",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Austin",
+    "normalized_label": "austin",
+    "country_or_macro_hint": "Americas",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Seattle",
+    "normalized_label": "seattle",
+    "country_or_macro_hint": "Americas",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "London",
+    "normalized_label": "london",
+    "country_or_macro_hint": "EMEA",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Dublin",
+    "normalized_label": "dublin",
+    "country_or_macro_hint": "EMEA",
+    "source": "manual-seed"
+  },
+  {
+    "raw_label": "Munich",
+    "normalized_label": "munich",
+    "country_or_macro_hint": "EMEA",
+    "source": "manual-seed"
+  }
+]
