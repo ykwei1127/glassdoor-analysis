@@ -4,13 +4,13 @@
 
 **所有命令都要從本 `handoff` 資料夾根目錄執行。** 請先在檔案總管開啟 `handoff`，在該資料夾按右鍵選擇「在終端機中開啟」，或在 PowerShell 執行 `cd` 進入這個資料夾。
 
-這是一份可獨立延續工作的副本，原始專案不需要放在同一個位置。
+這是一份可獨立更新資料的工作副本，原始專案不需要放在同一個位置。交接時的 `artifacts` 是目前資料基準；之後應以它為基礎，定期抓取新資料並更新分析。
 
 ## 這個工具做什麼？
 
 這個工具會從 Glassdoor 抓取**公司／地區層級的 aggregate review metrics（彙總評論指標）**，例如整體評分、各項評分與評論數等。它不是下載每一則評論，而是整理公司在指定地區的彙總資料。
 
-交接包內已經帶有目前的 `artifacts` 資料（包括快取、成功結果、嘗試紀錄與執行摘要），可以直接從目前進度繼續。**請不要刪除 `artifacts` 資料夾或其中的檔案。**
+交接包內已經帶有目前的 `artifacts` 資料（包括地區池、URL 清單、成功結果、嘗試紀錄與執行摘要）。這些檔案是後續更新資料的基準，請在更新前先備份，並且**不要刪除 `artifacts` 資料夾或其中的檔案**。
 
 ## Windows 初次設定
 
@@ -63,9 +63,9 @@
 
    如果成功，回應中會看到 Chrome 版本及 `webSocketDebuggerUrl` 等資訊。
 
-## 建議的第一次小批量流程
+## 第一次使用：小批量測試
 
-請先只跑單一公司／地區，確認流程正常。以下指令都從 `handoff` 根目錄執行，使用 ASUS、Taipei、CDP port 9223：
+第一次交接或換電腦時，請先只跑單一公司／地區，確認環境正常。以下指令都從 `handoff` 根目錄執行，使用 ASUS、Taipei、CDP port 9223：
 
 ```powershell
 .venv\Scripts\python.exe -m glassdoor_analysis --companies ASUS --regions Taipei --browser-cdp-url http://127.0.0.1:9223 --stage discover-locations
@@ -79,7 +79,77 @@
 .venv\Scripts\python.exe -m glassdoor_analysis --companies ASUS --regions Taipei --browser-cdp-url http://127.0.0.1:9223 --stage extract-metrics --max-extractions 1
 ```
 
-工具會使用 `artifacts` 裡的快取。**快取已存在時不要隨意加入 `--rebuild-region-pool` 或 `--rebuild-review-urls`**，除非你確定要重新建立對應資料；重建可能改變現有 checkpoint。
+工具會使用 `artifacts` 裡的快取。第一次小批量測試時，**快取已存在時不要加入 `--rebuild-region-pool` 或 `--rebuild-review-urls`**，避免測試意外改變目前資料基準。
+
+## 日常更新新資料
+
+交接後的主要工作是更新新資料，不是每次都從頭建立專案。建議流程如下：
+
+### 1. 備份目前資料
+
+在 `handoff` 根目錄執行，將日期換成實際更新日期：
+
+```powershell
+Copy-Item artifacts artifacts_backup_2026-08-03 -Recurse
+```
+
+### 2. 更新 Office Locations 與 region pool
+
+如果要找出公司新增或變更的辦公室地點，執行：
+
+```powershell
+.venv\Scripts\python.exe -m glassdoor_analysis `
+  --stage discover-locations `
+  --rebuild-region-pool `
+  --browser-cdp-url http://127.0.0.1:9223
+```
+
+`--rebuild-region-pool` 會重新抓取 Office Locations 並更新 `artifacts\region_pool.json`。這是刻意更新資料池的操作，執行前務必先備份 `artifacts`。
+
+### 3. 為新地區建立 review URL
+
+保留既有 manifest，並只補上目前 pool 中尚未存在的公司／地區組合：
+
+```powershell
+.venv\Scripts\python.exe -m glassdoor_analysis `
+  --stage resolve-review-urls `
+  --browser-cdp-url http://127.0.0.1:9223
+```
+
+日常新增資料時不要加 `--rebuild-review-urls`；只有在確定要捨棄並重建整份 URL manifest 時才使用它。
+
+### 4. 抓取新地區的 aggregate metrics
+
+```powershell
+.venv\Scripts\python.exe -m glassdoor_analysis `
+  --stage extract-metrics `
+  --browser-cdp-url http://127.0.0.1:9223
+```
+
+一般執行會保留已經成功的資料，只處理尚未成功的新 resolved URL。完成後檢查 `artifacts\reviews_aggregate.json/csv` 與 `run_summary.json`。
+
+### 5. 更新既有公司／地區的最新評分
+
+如果目的不是新增地區，而是要把既有公司／地區頁面上的最新評分、推薦率或評論數重新抓一次，請使用：
+
+```powershell
+.venv\Scripts\python.exe -m glassdoor_analysis `
+  --stage extract-metrics `
+  --refresh-existing-metrics `
+  --max-extractions 10 `
+  --browser-cdp-url http://127.0.0.1:9223
+```
+
+先用 `--max-extractions 10` 小批量確認結果，再移除這個限制執行完整更新。這個模式會以新結果替換相同 company／region 的舊資料，因此執行前務必備份 `artifacts`。
+
+### 6. 若要重試失敗項目
+
+```powershell
+.venv\Scripts\python.exe -m glassdoor_analysis `
+  --stage extract-metrics `
+  --retry-extraction-failures `
+  --browser-cdp-url http://127.0.0.1:9223
+```
 
 ## 重跑與重試規則
 
@@ -154,6 +224,6 @@ python -m venv .venv
 
 若 `pip` 顯示權限或網路錯誤，先確認網路連線、Python 安裝時已勾選加入 PATH，並使用上面的 `.venv\Scripts\python.exe -m pip`，不要直接依賴全域 `pip`。
 
-## 交接原則
+## 交接後的資料更新原則
 
-把 `artifacts` 視為可延續的 checkpoint：先備份、再執行、確認結果後再備份。若不確定某個選項是否會重建或覆蓋資料，先不要執行，保留現有 artifacts 並尋求確認。
+把 `artifacts` 視為目前分析基準與更新 checkpoint：先備份、更新 pool 與新 URL、抓取新 metrics、確認結果後再備份。一般更新不應刪除既有成功資料；只有明確要重建或重新抓取舊資料時，才使用 `--rebuild-*` 或 `--refresh-existing-metrics`。若不確定某個選項會不會改變資料，先不要執行，保留現有 artifacts 並尋求確認。
