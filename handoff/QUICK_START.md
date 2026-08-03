@@ -81,6 +81,29 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\scripts\update_data.ps1
 ```
 
+## 只更新既有公司／地區的評分
+
+如果你只想把目前已經有的公司／地區評分更新成 Glassdoor 最新數字，**不要使用上面的 `update_data.ps1`**，請使用另一支專用腳本：
+
+```powershell
+.\scripts\refresh_existing_metrics.ps1
+```
+
+這支腳本只會重新抓取既有評分，不會更新：
+
+- 公司辦公室地點
+- 區域 pool
+- 公司／地區 review URL
+- 新增公司或新地區
+
+第一次建議先只測試 10 筆：
+
+```powershell
+.\scripts\refresh_existing_metrics.ps1 -MaxExtractions 10
+```
+
+確認結果正常後，再執行不帶 `-MaxExtractions` 的完整更新。這兩支腳本都會先自動備份 `artifacts`。
+
 ## 更新完成後看哪裡？
 
 最重要的結果在：

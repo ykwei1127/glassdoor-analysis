@@ -144,6 +144,14 @@ Copy-Item artifacts artifacts_backup_2026-08-03 -Recurse
 
 先用 `--max-extractions 10` 小批量確認結果，再移除這個限制執行完整更新。這個模式會以新結果替換相同 company／region 的舊資料，因此執行前務必備份 `artifacts`。
 
+不熟悉命令列時，也可以直接執行：
+
+```powershell
+.\scripts\refresh_existing_metrics.ps1 -MaxExtractions 10
+```
+
+確認小批量結果正常後，再執行不帶 `-MaxExtractions` 的完整更新。
+
 ### 6. 若要重試失敗項目
 
 ```powershell
