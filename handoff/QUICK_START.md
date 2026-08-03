@@ -86,6 +86,27 @@ Extraction progress: 3/639
 
 每次執行前會自動備份 `artifacts`。每筆請求之間會依照安全設定等待數秒，看到進度慢慢增加是正常的。
 
+### 更新時的參數設定
+
+一般使用不需要修改參數，目前設定如下：
+
+| 設定 | 目前值 | 說明 |
+|---|---:|---|
+| Chrome Debug Port | `9223` | Chrome 連線埠；通常不要改 |
+| `MaxExtractions` | 不限制 | 測試時可用 `-MaxExtractions 10`，只跑 10 筆 |
+| `ProgressEvery` | `1` | 每完成 1 筆顯示一次進度 |
+| 每次 request 基本等待 | `8` 秒 | 每次抓取前至少等待 8 秒 |
+| 隨機額外等待 | `0～4` 秒 | 實際通常約 8～12 秒 |
+| Cooldown | 每 `25` 筆後 `120` 秒 | 降低 CAPTCHA 或 rate limit 風險 |
+
+`Port`、`MaxExtractions`、`ProgressEvery` 可以在腳本指令中調整，例如：
+
+```powershell
+.\scripts\refresh_existing_metrics.ps1 -Port 9224 -ProgressEvery 5 -MaxExtractions 10
+```
+
+等待時間與 cooldown 是程式的安全預設值，除非熟悉 Glassdoor 抓取限制，否則不建議降低。
+
 ### 3. 需要新增地區或更新公司地點時
 
 只有在需要找新公司／地區，或要更新 Office Locations 時，才使用完整更新：
