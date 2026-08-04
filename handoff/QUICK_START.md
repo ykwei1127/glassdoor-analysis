@@ -35,7 +35,7 @@ handoff\artifacts\
 
 ### 2. 建立環境
 
-在 `handoff` 資料夾內開啟 PowerShell，貼上以下兩行：
+請先雙擊 `open_handoff_powershell.bat`，它會自動開啟 PowerShell 並切換到正確的 `handoff` 資料夾。之後在開啟的視窗貼上以下兩行：
 
 ```powershell
 python -m venv .venv
