@@ -18,7 +18,7 @@
 
 1. 安裝下列軟體：
    - [Python 3.11 或更新版本](https://www.python.org/downloads/)
-   - Node.js 18 或更新版本（會包含 npm）
+   - [Node.js 18 或更新版本（建議下載 LTS 版，會包含 npm）](https://nodejs.org/en/download)
    - [Google Chrome](https://www.google.com/chrome/)
    - [Git](https://git-scm.com/download/win)
 2. 從 `handoff` 根目錄雙擊 `1_setup_environment.bat`。
