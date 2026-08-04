@@ -520,6 +520,7 @@ class ScrapePipeline:
             except FetchError as exc:
                 new_errors += 1
                 processed += 1
+                failure_reason = f"metrics_fetch_failed: {exc}"
                 attempts.append(
                     AttemptLogEntry.create(
                         company=target.company,
@@ -527,11 +528,13 @@ class ScrapePipeline:
                         candidate_url=candidate_url,
                         final_url=candidate_url,
                         status="error",
-                        failure_reason=f"metrics_fetch_failed: {exc}",
+                        failure_reason=failure_reason,
                         header_text="",
                         observed_region=None,
                     )
                 )
+                if status_callback:
+                    status_callback(f"Fetch error for {target.company} / {target.requested_region}: {failure_reason}")
                 write_extraction_checkpoint(checkpoint_dir, records, attempts, include_records=not dry_validate)
                 _report_extraction_progress(
                     status_callback,
