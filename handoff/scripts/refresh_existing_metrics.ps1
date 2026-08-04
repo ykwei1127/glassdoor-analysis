@@ -9,7 +9,7 @@ $ErrorActionPreference = "Stop"
 $python = Join-Path (Get-Location) ".venv\Scripts\python.exe"
 
 if (-not (Test-Path $python)) {
-    throw "找不到 .venv。請先依照 QUICK_START.md 完成環境設定。"
+    throw "Python environment not found. Run 1_setup_environment.bat first."
 }
 
 $requiredFiles = @(
@@ -19,17 +19,17 @@ $requiredFiles = @(
 )
 $missingFiles = $requiredFiles | Where-Object { -not (Test-Path $_) }
 if ($missingFiles) {
-    throw "找不到既有資料檔案：$($missingFiles -join ', ')。請確認目前位於 handoff 根目錄。"
+    throw "Required data files are missing: $($missingFiles -join ', '). Make sure you are running this from the handoff folder."
 }
 
 try {
     Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:$Port/json/version" -TimeoutSec 5 | Out-Null
 } catch {
-    throw "Chrome Debug Port $Port 尚未啟動。請先執行 .\scripts\start_chrome_cdp.ps1 並登入 Glassdoor。"
+    throw "Chrome Debug Port $Port is not running. Run 2_start_chrome_cdp.bat and log in to Glassdoor first."
 }
 
 $backupName = "artifacts_backup_{0}" -f (Get-Date -Format "yyyyMMdd_HHmmss")
-Write-Output "正在備份目前資料到 $backupName ..."
+Write-Output "Backing up current data to $backupName ..."
 Copy-Item "artifacts" $backupName -Recurse -ErrorAction Stop
 
 $arguments = @(
@@ -41,21 +41,23 @@ $arguments = @(
 )
 if ($PSBoundParameters.ContainsKey("MaxExtractions")) {
     if ($MaxExtractions -lt 0) {
-        throw "MaxExtractions 必須是 0 或更大的數字。"
+        throw "MaxExtractions must be zero or greater."
     }
     $arguments += @("--max-extractions", $MaxExtractions)
 }
 if ($ProgressEvery -lt 1) {
-    throw "ProgressEvery 必須是 1 或更大的數字。"
+    throw "ProgressEvery must be one or greater."
 }
 $arguments += @("--progress-every", $ProgressEvery)
 
-Write-Output "只更新既有公司／地區評分，不會更新 office locations 或 review URL。"
-Write-Output "每處理 $ProgressEvery 筆顯示一次進度。"
+Write-Output "Refreshing existing company-region ratings only."
+Write-Output "Office locations and review URLs will not be updated."
+Write-Output "Progress will be shown after every $ProgressEvery record."
 & $python @arguments
 if ($LASTEXITCODE -ne 0) {
-    throw "評分更新失敗。請保留 artifacts 與備份資料，查看上方錯誤訊息。"
+    throw "The ratings refresh failed. Keep the backup and review the error message above."
 }
 
-Write-Output "既有評分更新完成。"
-Write-Output "目前資料在 .\artifacts；更新前備份在 .\$backupName。"
+Write-Output "Existing ratings refresh completed."
+Write-Output "Current data: .\artifacts"
+Write-Output "Backup: .\$backupName"

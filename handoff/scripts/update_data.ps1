@@ -8,24 +8,24 @@ $ErrorActionPreference = "Stop"
 $python = Join-Path (Get-Location) ".venv\Scripts\python.exe"
 
 if (-not (Test-Path $python)) {
-    throw "找不到 .venv。請先依照使用說明完成環境設定。"
+    throw "Python environment not found. Run 1_setup_environment.bat first."
 }
 
 try {
     Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:$Port/json/version" -TimeoutSec 5 | Out-Null
 } catch {
-    throw "Chrome Debug Port $Port 尚未啟動。請先執行 .\scripts\start_chrome_cdp.ps1 並登入 Glassdoor。"
+    throw "Chrome Debug Port $Port is not running. Run 2_start_chrome_cdp.bat and log in to Glassdoor first."
 }
 
 $backupName = "artifacts_backup_{0}" -f (Get-Date -Format "yyyyMMdd_HHmmss")
-Write-Output "正在備份目前資料到 $backupName ..."
+Write-Output "Backing up current data to $backupName ..."
 Copy-Item "artifacts" $backupName -Recurse -ErrorAction Stop
 
 function Invoke-GlassdoorStage {
     param([string[]]$Arguments)
     & $python -m glassdoor_analysis @Arguments
     if ($LASTEXITCODE -ne 0) {
-        throw "資料更新中止，最後執行的階段失敗。請保留目前 artifacts 與備份資料，查看上方錯誤訊息。"
+        throw "The data update stopped because a stage failed. Keep the artifacts and backup, then review the error above."
     }
 }
 
@@ -34,19 +34,20 @@ $common = @(
     "--output-dir", ".\artifacts"
 )
 
-Write-Output "正在更新公司辦公室與地區池..."
+Write-Output "Updating office locations and the region pool..."
 Invoke-GlassdoorStage (@("--stage", "discover-locations", "--rebuild-region-pool") + $common)
 
-Write-Output "正在補充新的公司／地區 review URL..."
+Write-Output "Finding new company-region review URLs..."
 Invoke-GlassdoorStage (@("--stage", "resolve-review-urls") + $common)
 
-Write-Output "正在抓取尚未成功的新資料..."
+Write-Output "Extracting new ratings..."
 Invoke-GlassdoorStage (@("--stage", "extract-metrics") + $common)
 
 if ($RefreshExisting) {
-    Write-Output "正在重新抓取既有公司／地區的最新評分..."
+    Write-Output "Refreshing existing company-region ratings..."
     Invoke-GlassdoorStage (@("--stage", "extract-metrics", "--refresh-existing-metrics") + $common)
 }
 
-Write-Output "資料更新完成。"
-Write-Output "目前資料在 .\artifacts；更新前備份在 .\$backupName。"
+Write-Output "Full data update completed."
+Write-Output "Current data: .\artifacts"
+Write-Output "Backup: .\$backupName"
