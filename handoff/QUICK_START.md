@@ -1,6 +1,6 @@
 # Glassdoor 資料更新｜簡易使用說明
 
-這份說明是給不需要閱讀程式碼的使用者。請把整個 `handoff` 資料夾保留在電腦上，之後所有操作都在這個資料夾中進行。
+這份說明是給不需要閱讀程式碼的使用者。大部分操作都可以直接在 `handoff` 資料夾內**雙擊檔案**完成。
 
 ## 目前已經準備好的資料
 
@@ -31,86 +31,76 @@ handoff\artifacts\
 - Python 3.11 或更新版本
 - Google Chrome
 
-安裝時如果看到「Add Python to PATH」，建議勾選。
+安裝 Python 時，如果看到「Add Python to PATH」，建議勾選。
 
 ### 2. 建立環境
 
-請先雙擊 `open_handoff_powershell.bat`，它會自動開啟 PowerShell 並切換到正確的 `handoff` 資料夾。之後在開啟的視窗貼上以下兩行：
+在 `handoff` 資料夾內，雙擊：
 
-```powershell
-python -m venv .venv
-.venv\Scripts\python.exe -m pip install -e .
+```text
+1_setup_environment.bat
 ```
 
-這個步驟只需要第一次做。
+它會自動建立環境並安裝程式。這個步驟只需要第一次做。
 
-## 開始更新資料
+## 每次更新資料的操作順序
 
-### 1. 開啟可登入 Glassdoor 的 Chrome
+### 1. 開啟 Chrome 並登入 Glassdoor
 
-在同一個 PowerShell 視窗貼上：
+雙擊：
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\scripts\start_chrome_cdp.ps1
+```text
+2_start_chrome_cdp.bat
 ```
 
-接著在新開的 Chrome 視窗登入 Glassdoor，並保持這個視窗開啟。
+它會開啟一個專用的 Chrome 視窗。請在這個新視窗登入 Glassdoor，並保持視窗開啟。
 
-### 2. 優先推薦：只更新既有公司／地區評分
+### 2. 先測試 10 筆既有評分
 
-如果只是想把目前已有的評分更新成 Glassdoor 最新數字，請使用：
+雙擊：
 
-```powershell
-.\scripts\refresh_existing_metrics.ps1 -MaxExtractions 10
+```text
+3_test_10_metrics.bat
 ```
 
-這會先測試 10 筆，並且每完成 1 筆就顯示一次進度，例如：
+這會只更新 10 筆既有公司／地區評分。畫面會逐筆顯示進度，例如：
 
 ```text
 Extraction progress: 3/639
 ```
 
-確認結果正常後，再執行完整更新：
+### 3. 測試正常後，更新全部既有評分
 
-```powershell
-.\scripts\refresh_existing_metrics.ps1
+雙擊：
+
+```text
+4_refresh_all_existing_metrics.bat
 ```
 
-這支腳本只會重新抓取既有評分，不會更新：
+這是最常用的更新方式。它只會重新抓取既有公司／地區的最新評分，不會更新：
 
 - 公司辦公室地點
 - 區域 pool
 - 公司／地區 review URL
 - 新增公司或新地區
 
-每次執行前會自動備份 `artifacts`。每筆請求之間會依照安全設定等待數秒，看到進度慢慢增加是正常的。
+### 4. 只有需要新增地區或更新公司地點時
 
-參數預設值與安全設定請參考同一個資料夾裡的 `README.md`。一般使用不需要修改它們。
+雙擊：
 
-### 3. 需要新增地區或更新公司地點時
-
-只有在需要找新公司／地區，或要更新 Office Locations 時，才使用完整更新：
-
-```powershell
-.\scripts\update_data.ps1 -RefreshExisting
+```text
+5_update_all_data.bat
 ```
 
-這個腳本會依序：
+這個完整更新會：
 
 1. 備份目前的 `artifacts`
 2. 更新公司的辦公室地點與區域 pool
 3. 找出新的公司／地區 review URL
 4. 抓取尚未完成的新資料
-5. 重新更新既有公司／地區的最新評分
+5. 更新既有公司／地區的最新評分
 
-如果只想補抓新地區、不重新抓既有評分，可以使用：
-
-```powershell
-.\scripts\update_data.ps1
-```
-
-完整更新可能需要一段時間，請不要關閉 PowerShell 或 Chrome，也不要同時開另一個更新程序。
+完整更新可能需要較長時間。除非確實需要新增地區或更新公司地點，否則優先使用第 4 個檔案更新既有評分即可。
 
 ## 更新完成後看哪裡？
 
@@ -134,31 +124,33 @@ artifacts\reviews_aggregate.json
 
 - 每次更新前，腳本會自動建立 `artifacts_backup_日期時間` 備份。
 - 不要刪除 `artifacts`，否則程式會失去目前的資料基準。
+- 不要同時執行兩個更新檔案。
 - 不要把 cookies、登入資料或其他個人資料放進共享資料夾。
 - 如果看到 CAPTCHA、要求重新登入、429 或 rate limit，請先停止，稍後再試。
-- 不要同時執行兩個更新腳本。
+- 每筆抓取之間會自動等待，看到進度慢慢增加是正常的。
 
 ## 如果遇到問題
 
 ### Chrome 沒有開啟或無法連線
 
-重新執行：
+重新雙擊：
 
-```powershell
-.\scripts\start_chrome_cdp.ps1
+```text
+2_start_chrome_cdp.bat
 ```
 
-確認在新開的 Chrome 登入 Glassdoor 後，再重新執行更新腳本。
+確認在新開的 Chrome 登入 Glassdoor 後，再重新雙擊測試或更新檔案。
 
 ### Python 或環境錯誤
 
-確認目前 PowerShell 位於 `handoff` 資料夾，並重新執行：
+重新雙擊：
 
-```powershell
-python -m venv .venv
-.venv\Scripts\python.exe -m pip install -e .
+```text
+1_setup_environment.bat
 ```
 
 ### 抓取被中止
 
 先不要刪除任何檔案。保留 `artifacts` 與自動建立的 backup，記下畫面上的錯誤訊息，再請熟悉的人協助確認。
+
+參數、安全設定與較完整的技術說明，請參考同一個資料夾內的 `README.md`。
