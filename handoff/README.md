@@ -18,19 +18,18 @@
 
 1. 安裝下列軟體：
    - [Python 3.11 或更新版本](https://www.python.org/downloads/)
+   - Node.js 18 或更新版本（會包含 npm）
    - [Google Chrome](https://www.google.com/chrome/)
    - [Git](https://git-scm.com/download/win)
-2. 從 `handoff` 根目錄開啟 PowerShell。
-3. 建立虛擬環境：
+2. 從 `handoff` 根目錄雙擊 `1_setup_environment.bat`。
+3. 這個腳本會自動建立 Python 虛擬環境、安裝本工具，以及安裝 CDP 所需的 Playwright library。
+
+如果需要手動執行，依序使用：
 
    ```powershell
    python -m venv .venv
-   ```
-
-4. 安裝本工具：
-
-   ```powershell
    .venv\Scripts\python.exe -m pip install -e .
+   npm install --ignore-scripts
    ```
 
 之後建議都使用 `.venv\Scripts\python.exe` 執行 Python，避免用到電腦上其他 Python 版本。

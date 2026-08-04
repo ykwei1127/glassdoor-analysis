@@ -12,6 +12,8 @@ from urllib.request import HTTPCookieProcessor, Request, build_opener
 from .models import SessionConfig
 
 
+_PROJECT_ROOT = Path(__file__).resolve().parents[2]
+_LOCAL_NODE_MODULES = _PROJECT_ROOT / "node_modules"
 _BUNDLED_NODE_DIR = (
     Path.home()
     / ".cache"
@@ -128,14 +130,18 @@ def _resolve_node_executable() -> str:
 
 
 def _resolve_node_path() -> str:
-    bundled_path = str(_BUNDLED_NODE_MODULES)
+    paths = [str(_LOCAL_NODE_MODULES), str(_BUNDLED_NODE_MODULES)]
     existing = os.environ.get("NODE_PATH", "")
     if existing:
-        return os.pathsep.join([bundled_path, existing])
-    return bundled_path
+        paths.append(existing)
+    return os.pathsep.join(paths)
 
 
 def _resolve_playwright_module() -> str:
+    local_module = _LOCAL_NODE_MODULES / "playwright"
+    if local_module.exists():
+        return str(local_module)
+
     candidates = sorted(_BUNDLED_NODE_MODULES.glob(".pnpm/playwright@*/node_modules/playwright"))
     if candidates:
         return str(candidates[-1])

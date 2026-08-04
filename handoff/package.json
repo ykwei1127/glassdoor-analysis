@@ -1,0 +1,7 @@
+{
+  "name": "glassdoor-analysis-runtime",
+  "private": true,
+  "dependencies": {
+    "playwright": "1.62.0"
+  }
+}

@@ -29,6 +29,7 @@ handoff\artifacts\
 請先安裝：
 
 - Python 3.11 或更新版本
+- Node.js 18 或更新版本（安裝時會一併安裝 npm）
 - Google Chrome
 
 安裝 Python 時，如果看到「Add Python to PATH」，建議勾選。

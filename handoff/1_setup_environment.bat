@@ -15,6 +15,20 @@ if errorlevel 1 (
     exit /b 1
 )
 
+where node >nul 2>&1
+if errorlevel 1 (
+    echo Node.js was not found. Please install Node.js 18 or newer first.
+    pause
+    exit /b 1
+)
+
+where npm >nul 2>&1
+if errorlevel 1 (
+    echo npm was not found. Please reinstall Node.js with npm included.
+    pause
+    exit /b 1
+)
+
 if not exist ".venv\Scripts\python.exe" (
     echo Creating the Python environment...
     python -m venv .venv
@@ -25,10 +39,18 @@ if not exist ".venv\Scripts\python.exe" (
     )
 )
 
-echo Installing the project...
+echo Installing the Python project...
 .venv\Scripts\python.exe -m pip install -e .
 if errorlevel 1 (
-    echo Installation failed. Please check the error above.
+    echo Python installation failed. Please check the error above.
+    pause
+    exit /b 1
+)
+
+echo Installing the browser connection library...
+npm install --ignore-scripts
+if errorlevel 1 (
+    echo Node.js dependency installation failed. Please check the error above.
     pause
     exit /b 1
 )
