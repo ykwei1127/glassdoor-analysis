@@ -48,7 +48,7 @@ if errorlevel 1 (
 )
 
 echo Installing the browser connection library...
-npm install --ignore-scripts
+call npm.cmd install --ignore-scripts
 if errorlevel 1 (
     echo Node.js dependency installation failed. Please check the error above.
     pause
